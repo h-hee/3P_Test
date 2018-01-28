@@ -252,7 +252,9 @@ a {
 }
 
 a:hover, a:focus {
-  color: #dc9831;
+/*   color: #dc9831; */
+/* 0128 현희 색깔바꿈 */
+color : #ff0066;
   text-decoration: none;
 }
 
@@ -1539,7 +1541,9 @@ border-color: #ff0066;
 }
 
 .search-form-container .btn:hover, .search-form-container .btn:focus {
-  color: #dc9831;
+/*   color: #dc9831; */
+/* 0128 현희 색깔바꿈 */
+color : #ff0066;
 }
 
 .search-form-toggle {
@@ -1668,7 +1672,9 @@ border-color: #ff0066;
   position: absolute;
   top: -7px;
   right: -6px;
-  color: #dc9831;
+/*   color: #dc9831; */
+/* 0128 현희 색깔 바꿈 */
+color : #ff0066;
   font-weight: 600;
 }
 
@@ -1769,7 +1775,9 @@ border-color: #ff0066;
   flex: 1 1 auto;
   font-size: 16px;
   font-weight: 500;
-  color: #dc9831;
+/*   color: #dc9831; */
+/* 0128 현희 색깔 바꿈 */
+color : #ff0066;
   letter-spacing: 0.025em;
 }
 
@@ -1811,7 +1819,9 @@ border-color: #ff0066;
 }
 
 .sidemenu-btn:hover span, .sidemenu-btn.open span {
-  background-color: #dc9831;
+/*   background-color: #dc9831; */
+/* 0128 현희 색깔바꿈 */
+background-color: #ff0066;
 }
 
 .sidemenu {
@@ -3026,7 +3036,9 @@ color : #ff0066;
   padding: 4px 7px 2px;
   min-width: 85px;
   text-align: center;
-  color: #dc9831;
+/*   color: #dc9831; */
+/* 0128 현희 색깔바꿈 */
+color : #ff0066;
   background-color: #fff;
   text-transform: uppercase;
   visibility: hidden;
@@ -3035,7 +3047,9 @@ color : #ff0066;
 }
 
 .product .btn-quick-view:hover, .product .btn-quick-view:focus {
-  background-color: #dc9831;
+/*   background-color: #dc9831; */
+/* 0128 현희 색깔바꿈 */
+background-color : #ff0066;
   color: #fff;
 }
 
