@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>3P-People,Perfume,Picture</title>
+<title>header_main</title>
 </head>
 <body>
 <header class="header sticky-header">
