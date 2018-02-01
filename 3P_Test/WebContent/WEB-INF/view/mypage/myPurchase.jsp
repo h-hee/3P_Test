@@ -32,10 +32,10 @@
         <style type="text/css">
         
         	.product-col {
-        		width: 135px;
+        		width: 150px;
         	}
      		.price-col {
-     			width: 280px;
+     			width: 260px;
      		}
      		.quantity-col {
      			width: 135px;
@@ -67,7 +67,7 @@
                                         <tr>
                                             <th>DATE</th>
                                             <th>ITEMS</th>
-                                            <th>?</th>
+                                            <th>PRICE</th>
                                             <th>QUANTITY</th>
                                             <th>TOTAL</th>
                                             <th></th>
@@ -76,62 +76,74 @@
                                     <tbody>
                                         <tr>
                                             <td class="product-col">
-                                                1996-02-18
+                                                2017-02-18
                                             </td>
                                             <td class="price-col">
                                                 <div class="product-title">
-                                                    <h5 style="display: inline-block;">Perfume Name</h5>
-                                                    <a href="#" class="show button left" style="padding-left: 40px; display: inline-block;">+ ect 4</a>
+                                                    <a href="#">Perfume Name1</a> <br/>
+                                                    <a href="#">Perfume Name2</a> <br/>
+                                                    <a href="#">Perfume Name3</a>
                                                 </div>
                                             </td>
                                             <td class="product-col">
-                                                1996-02-18
-                                                <br/>
-                                                2018-01-26
+                                                $56.00 <br/>
+                                                $50.00 <br/>
+                                                $49.00
                                             </td>
-                                            <td class="quantity-col" style="padding-left: 30px;">3</td>
+                                            <td class="quantity-col" style="padding-left: 30px;">
+                                            	1 <br/>
+                                            	3 <br/>
+                                            	1
+                                            </td>
                                             <td class="total-col">$180.00</td>
-                                            <td class="delete-col"><a href="#"><img src="/assets/images/3P/find.png" style="height: 10px; width: 10px;"></a></td>
+                                            <td class="delete-col"><a href="#"><img src="/assets/images/3P/find.png" class="show" style="height: 10px; width: 10px;"></a></td>
                                         </tr>
                                         
                                         <tr>
                                             <td class="product-col">
-                                               	1996-02-18
+                                                2017-07-18
                                             </td>
                                             <td class="price-col">
                                                 <div class="product-title">
-                                                    <h5 style="display: inline-block;">Perfume Name</h5>
-                                                    <a href="#" class="show button left" style="padding-left: 40px; display: inline-block;">+ ect 1</a>
+                                                    <a href="#">Perfume Name1</a> <br/>
+                                                    <a href="#">Perfume Name2</a>
                                                 </div>
                                             </td>
                                             <td class="product-col">
-                                                1996-02-18
-                                                <br/>
-                                                2018-01-26
+                                                $56.00 <br/>
+                                                $50.00
                                             </td>
-                                            <td class="quantity-col" style="padding-left: 30px;">3</td>
+                                            <td class="quantity-col" style="padding-left: 30px;">
+                                            	1 <br/>
+                                            	1
+                                            </td>
                                             <td class="total-col">$180.00</td>
-                                            <td class="delete-col"><a href="#"><img src="/assets/images/3P/find.png" style="height: 10px; width: 10px;"></a></td>
+                                            <td class="delete-col"><a href="#"><img src="/assets/images/3P/find.png" class="show" style="height: 10px; width: 10px;"></a></td>
                                         </tr>
                                                                                 
                                         <tr>
                                             <td class="product-col">
-                                                1996-02-18
+                                                2018-01-30
                                             </td>
                                             <td class="price-col">
                                                 <div class="product-title">
-                                                    <h5 style="display: inline-block;">Perfume Name</h5>
-                                                    <a href="#" class="show button left" style="padding-left: 40px; display: inline-block;">+ ect 3</a>
+                                                    <a href="#">Perfume Name1</a> <br/>
+                                                    <a href="#">Perfume Name2</a> <br/>
+                                                    <a href="#">Perfume Name3</a>
                                                 </div>
                                             </td>
                                             <td class="product-col">
-                                                1996-02-18
-                                                <br/>
-                                                2018-01-26
+                                                $56.00 <br/>
+                                                $50.00 <br/>
+                                                $49.00
                                             </td>
-                                            <td class="quantity-col" style="padding-left: 30px;">3</td>
+                                            <td class="quantity-col" style="padding-left: 30px;">
+                                            	1 <br/>
+                                            	1 <br/>
+                                            	4
+                                            </td>
                                             <td class="total-col">$180.00</td>
-                                            <td class="delete-col"><a href="#"><img src="/assets/images/3P/find.png" style="height: 10px; width: 10px;"></a></td>
+                                            <td class="delete-col"><a href="#"><img src="/assets/images/3P/find.png" class="show" style="height: 10px; width: 10px;"></a></td>
                                         </tr>
                                     </tbody>
                                 </table>

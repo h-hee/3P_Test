@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context>
+   <Resource name="jdbc/msql" auth="Container"
+         type="javax.sql.DataSource"
+         driverClassName="com.mysql.jdbc.Driver"
+         url="jdbc:mysql://13.125.32.7:3306/3p"
+         username="3p"
+         password="3p"
+         loginTimeout="10"
+         maxWait="5000"
+         testOnBorrow="true" />
+         
+</Context>
