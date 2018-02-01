@@ -23,7 +23,7 @@
         <script src="assets/js/modernizr.js"></script>
         
         <!-- 0201 현희 index.css 추가 -->
-        <link rel="stylesheet" href="/3P_HH/css/common/index.css" type="text/css" />
+        <link rel="stylesheet" href="/css/common/index.css" type="text/css" />
     </head>
     <body>
 	        <div id="wrapper">
