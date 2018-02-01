@@ -1,0 +1,70 @@
+@charset "UTF-8";
+
+/* 메인 검색 바 마진 없앰 */
+        .search-form-container {
+			margin-left: unset;
+		}
+		@media (min-width: 1200px) {
+		  .search-form-container {
+		    margin-left: unset;
+		  }
+		}
+/* end 메인 검색 바 마진 없앰 */
+		/* 0128 현희 메인 내용 가운데 맞춤 */
+		@media (min-width: 992px) {
+			.col-md-push-3 {
+			    left: 15%;
+			}
+		}
+/* end 메인 내용 가운데 맞춤 */
+		/* 로고 */
+		#mainLogo {
+			width: 700px;
+			margin : auto;
+			text-align: center;
+		}
+		#mainLogo img {
+			width: 80%;
+		}
+		#imsi01 {
+			height:300px;
+			margin-top: 30px;
+		}
+/* end 로고 */
+		/* 검색바 글씨크기 수정 */
+		.search-dropdown .dropdown-toggle {
+			font-size: 15px;
+		}
+		.search-dropdown .dropdown-menu li a {
+			font-size: 14px;
+		}
+		.search-form-container .form-control {
+			font-size: 15px;
+			color : #000000; /* 글씨 색깔 검정으로 */
+		}
+/* end 검색바 글씨크기 수정 */
+		.search-dropdown .dropdown-toggle i {
+			top : 7px;
+		}
+		.search-form-container {
+			height: 250px;
+		}
+		.search-form-container form {
+			text-align-last : center;
+		}
+		#wrapper {
+ 	 		background-image: url("../../img/common/mainB.png") ; 
+ 	 		background-size: 100% 100%;
+		}
+		.header {
+			background-color:unset; 
+		}
+		.header.sticky-header.fixed {
+			background-color: white;
+		}
+		.search-form-container form {
+			background-color: white;
+		}
+		.search-form-container form {
+			border: 2px solid;
+		}
