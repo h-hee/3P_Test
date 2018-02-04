@@ -11,6 +11,7 @@
 
 
 <!-- @Controller, @Repository, @Service ... -->
-<context:component-scan base-package="3P_test.member"/>
+<context:component-scan base-package="member"/>
+<context:annotation-config />
 
 </beans>

@@ -14,7 +14,8 @@
 </bean>
 
 <!-- @Controller, @Repository, @Service ... -->
-<context:component-scan base-package="3P_test.common"/>
+<context:component-scan base-package="common"/>
+<context:annotation-config />
 
 <!-- 파일 첨부를 위한 multipart 선언 -->
 <bean id ='multipartResolver' class="org.springframework.web.multipart.commons.CommonsMultipartResolver"></bean>
@@ -26,11 +27,11 @@
 </bean>
 
 <!-- String mybatis 설정 -->
-<bean id="factoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
-   <property name="dataSource" ref="dataSource"></property>
-   <property name="configLocation" value="classpath:common/mybatis/configMybatis.xml"></property>
-   <property name="mapperLocations" value="classpath*:common/mapper/*.xml"></property>
-</bean>
+<!-- <bean id="factoryBean" class="org.mybatis.spring.SqlSessionFactoryBean"> -->
+<!--    <property name="dataSource" ref="dataSource"></property> -->
+<!--    <property name="configLocation" value="classpath:common/mybatis/configMybatis.xml"></property> -->
+<!--    <property name="mapperLocations" value="classpath*:common/mapper/*.xml"></property> -->
+<!-- </bean> -->
 
 <bean id="ss" class="org.mybatis.spring.SqlSessionTemplate">
    <constructor-arg ref="factoryBean"></constructor-arg>
