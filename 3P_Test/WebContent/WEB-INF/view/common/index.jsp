@@ -13,14 +13,14 @@
         <!-- Google Fonts -->
         <link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700%7COswald:300,400,500,600,700" rel="stylesheet">
 
-        <link rel="stylesheet" href="assets/css/plugins.min.css">
-        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="/assets/css/plugins.min.css">
+        <link rel="stylesheet" href="/assets/css/style.css">
         
         <!-- Favicon -->
-        <link rel="icon" type="image/png" href="assets/images/icons/favicon.png">
+        <link rel="icon" type="image/png" href="/assets/images/icons/favicon.png">
 
         <!-- Modernizr -->
-        <script src="assets/js/modernizr.js"></script>
+        <script src="/assets/js/modernizr.js"></script>
         
         <!-- 0201 현희 index.css 추가 -->
         <link rel="stylesheet" href="/css/common/index.css" type="text/css" />
@@ -40,7 +40,7 @@
 	                        <div class="col-md-9 col-md-push-3">
 	                        	<div id="imsi01">
 	                        		<div id="mainLogo">
-	                        			<img alt="" src="img/common/mainLogo.png">
+	                        			<img alt="" src="/img/common/mainLogo.png">
 	                        		</div>
 	                        	</div>
 	                        	
@@ -55,27 +55,27 @@
 	                            data-owl-responsive='{ "480": {"items": 2}, "768": {"items": 3}, "992": {"items": 3}, "1200": {"items": 4} }'>
 	                                <div class="product">
 	                                    <figure class="product-image-container">
-	                                        <a href="product.html" title="Product Name" class="product-image-link">
-	                                            <img class="owl-lazy" src="assets/images/blank.png" data-src="assets/images/products/product5.jpg" width="195" height="255" alt="Product Image">
+	                                        <a href="/product.html" title="Product Name" class="product-image-link">
+	                                            <img class="owl-lazy" src="/assets/images/blank.png" data-src="/assets/images/products/product5.jpg" width="195" height="255" alt="Product Image">
 	                                        </a>
 	                                        <span class="product-label">-55%</span>
-	                                        <a href="#" class="btn-quick-view">Quick View</a>
+	                                        <a href="/#" class="btn-quick-view">Quick View</a>
 	
 	                                        <div class="product-action">
-	                                            <a href="#" class="btn-product btn-wishlist" title="Add to Wishlist">
+	                                            <a href="/#" class="btn-product btn-wishlist" title="Add to Wishlist">
 	                                                <i class="icon-product icon-heart"></i>
 	                                            </a>
-	                                            <a href="#" class="btn-product btn-add-cart" title="Add to Bag">
+	                                            <a href="/#" class="btn-product btn-add-cart" title="Add to Bag">
 	                                                <i class="icon-product icon-bag"></i>
 	                                                <span>Add to Bag</span>
 	                                            </a>
-	                                            <a href="#" class="btn-product btn-compare" title="Add to Compare">
+	                                            <a href="/#" class="btn-product btn-compare" title="Add to Compare">
 	                                                <i class="icon-product icon-bar"></i>
 	                                            </a>
 	                                        </div><!-- End .product-action -->
 	                                    </figure>
 	                                    <h3 class="product-title">
-	                                        <a href="product.html">Chandelier bulb</a>
+	                                        <a href="/product.html">Chandelier bulb</a>
 	                                    </h3>
 	                                    <div class="product-price-container">
 	                                        <span class="product-price">$250.00</span>
@@ -84,26 +84,26 @@
 	
 	                                <div class="product">
 	                                    <figure class="product-image-container">
-	                                        <a href="product.html" title="Product Name" class="product-image-link">
-	                                            <img class="owl-lazy" src="assets/images/blank.png" data-src="assets/images/products/product10.jpg" width="195" height="255" alt="Product Image">
+	                                        <a href="/product.html" title="Product Name" class="product-image-link">
+	                                            <img class="owl-lazy" src="/assets/images/blank.png" data-src="/assets/images/products/product10.jpg" width="195" height="255" alt="Product Image">
 	                                        </a>
-	                                        <a href="#" class="btn-quick-view">Quick View</a>
+	                                        <a href="/#" class="btn-quick-view">Quick View</a>
 	
 	                                        <div class="product-action">
-	                                            <a href="#" class="btn-product btn-wishlist" title="Add to Wishlist">
+	                                            <a href="/#" class="btn-product btn-wishlist" title="Add to Wishlist">
 	                                                <i class="icon-product icon-heart"></i>
 	                                            </a>
-	                                            <a href="#" class="btn-product btn-add-cart" title="Add to Bag">
+	                                            <a href="/#" class="btn-product btn-add-cart" title="Add to Bag">
 	                                                <i class="icon-product icon-bag"></i>
 	                                                <span>Add to Bag</span>
 	                                            </a>
-	                                            <a href="#" class="btn-product btn-compare" title="Add to Compare">
+	                                            <a href="/#" class="btn-product btn-compare" title="Add to Compare">
 	                                                <i class="icon-product icon-bar"></i>
 	                                            </a>
 	                                        </div><!-- End .product-action -->
 	                                    </figure>
 	                                    <h3 class="product-title">
-	                                        <a href="product.html">Dining chair</a>
+	                                        <a href="/product.html">Dining chair</a>
 	                                    </h3>
 	                                    <div class="product-price-container">
 	                                        <span class="product-price">$130.00</span>
@@ -112,26 +112,26 @@
 	
 	                                <div class="product">
 	                                    <figure class="product-image-container">
-	                                        <a href="product.html" title="Product Name" class="product-image-link">
-	                                            <img class="owl-lazy" src="assets/images/blank.png" data-src="assets/images/products/product11.jpg" width="195" height="255" alt="Product Image">
+	                                        <a href="/product.html" title="Product Name" class="product-image-link">
+	                                            <img class="owl-lazy" src="/assets/images/blank.png" data-src="/assets/images/products/product11.jpg" width="195" height="255" alt="Product Image">
 	                                        </a>
-	                                        <a href="#" class="btn-quick-view">Quick View</a>
+	                                        <a href="/#" class="btn-quick-view">Quick View</a>
 	
 	                                        <div class="product-action">
-	                                            <a href="#" class="btn-product btn-wishlist" title="Add to Wishlist">
+	                                            <a href="/#" class="btn-product btn-wishlist" title="Add to Wishlist">
 	                                                <i class="icon-product icon-heart"></i>
 	                                            </a>
-	                                            <a href="#" class="btn-product btn-add-cart" title="Add to Bag">
+	                                            <a href="/#" class="btn-product btn-add-cart" title="Add to Bag">
 	                                                <i class="icon-product icon-bag"></i>
 	                                                <span>Add to Bag</span>
 	                                            </a>
-	                                            <a href="#" class="btn-product btn-compare" title="Add to Compare">
+	                                            <a href="/#" class="btn-product btn-compare" title="Add to Compare">
 	                                                <i class="icon-product icon-bar"></i>
 	                                            </a>
 	                                        </div><!-- End .product-action -->
 	                                    </figure>
 	                                    <h3 class="product-title">
-	                                        <a href="product.html">Woolen scarf</a>
+	                                        <a href="/product.html">Woolen scarf</a>
 	                                    </h3>
 	                                    <div class="product-price-container">
 	                                        <span class="product-price">$95.00</span>
@@ -140,26 +140,26 @@
 	
 	                                <div class="product">
 	                                    <figure class="product-image-container">
-	                                        <a href="product.html" title="Product Name" class="product-image-link">
-	                                            <img class="owl-lazy" src="assets/images/blank.png" data-src="assets/images/products/product12.jpg" width="195" height="255" alt="Product Image">
+	                                        <a href="/product.html" title="Product Name" class="product-image-link">
+	                                            <img class="owl-lazy" src="/assets/images/blank.png" data-src="/assets/images/products/product12.jpg" width="195" height="255" alt="Product Image">
 	                                        </a>
-	                                        <a href="#" class="btn-quick-view">Quick View</a>
+	                                        <a href="/#" class="btn-quick-view">Quick View</a>
 	
 	                                        <div class="product-action">
-	                                            <a href="#" class="btn-product btn-wishlist" title="Add to Wishlist">
+	                                            <a href="/#" class="btn-product btn-wishlist" title="Add to Wishlist">
 	                                                <i class="icon-product icon-heart"></i>
 	                                            </a>
-	                                            <a href="#" class="btn-product btn-add-cart" title="Add to Bag">
+	                                            <a href="/#" class="btn-product btn-add-cart" title="Add to Bag">
 	                                                <i class="icon-product icon-bag"></i>
 	                                                <span>Add to Bag</span>
 	                                            </a>
-	                                            <a href="#" class="btn-product btn-compare" title="Add to Compare">
+	                                            <a href="/#" class="btn-product btn-compare" title="Add to Compare">
 	                                                <i class="icon-product icon-bar"></i>
 	                                            </a>
 	                                        </div><!-- End .product-action -->
 	                                    </figure>
 	                                    <h3 class="product-title">
-	                                        <a href="product.html">Tripod lampshade</a>
+	                                        <a href="/product.html">Tripod lampshade</a>
 	                                    </h3>
 	                                    <div class="product-price-container">
 	                                        <span class="product-price">$180.00</span>
@@ -168,26 +168,26 @@
 	
 	                               <div class="product">
 	                                    <figure class="product-image-container">
-	                                        <a href="product.html" title="Product Name" class="product-image-link">
-	                                            <img class="owl-lazy" src="assets/images/blank.png" data-src="assets/images/products/product14.jpg" width="195" height="255" alt="Product Image">
+	                                        <a href="/product.html" title="Product Name" class="product-image-link">
+	                                            <img class="owl-lazy" src="/assets/images/blank.png" data-src="/assets/images/products/product14.jpg" width="195" height="255" alt="Product Image">
 	                                        </a>
-	                                        <a href="#" class="btn-quick-view">Quick View</a>
+	                                        <a href="/#" class="btn-quick-view">Quick View</a>
 	
 	                                        <div class="product-action">
-	                                            <a href="#" class="btn-product btn-wishlist" title="Add to Wishlist">
+	                                            <a href="/#" class="btn-product btn-wishlist" title="Add to Wishlist">
 	                                                <i class="icon-product icon-heart"></i>
 	                                            </a>
-	                                            <a href="#" class="btn-product btn-add-cart" title="Add to Bag">
+	                                            <a href="/#" class="btn-product btn-add-cart" title="Add to Bag">
 	                                                <i class="icon-product icon-bag"></i>
 	                                                <span>Add to Bag</span>
 	                                            </a>
-	                                            <a href="#" class="btn-product btn-compare" title="Add to Compare">
+	                                            <a href="/#" class="btn-product btn-compare" title="Add to Compare">
 	                                                <i class="icon-product icon-bar"></i>
 	                                            </a>
 	                                        </div><!-- End .product-action -->
 	                                    </figure>
 	                                    <h3 class="product-title">
-	                                        <a href="product.html">Ceiling lights</a>
+	                                        <a href="/product.html">Ceiling lights</a>
 	                                    </h3>
 	                                    <div class="product-price-container">
 	                                        <span class="product-price">$140.00</span>
@@ -209,28 +209,28 @@
 	            <jsp:include page="/WEB-INF/view/common/footer.jsp"/>
 	        </div><!-- End #wrapper -->
 	        
-        <a id="scroll-top" href="#top" title="Scroll top"><i class="fa fa-angle-up"></i></a>
+        <a id="scroll-top" href="/#top" title="Scroll top"><i class="fa fa-angle-up"></i></a>
 
         <!-- End -->
-        <script src="assets/js/plugins.js"></script>
-        <script src="assets/js/main.js"></script>
+        <script src="/assets/js/plugins.js"></script>
+        <script src="/assets/js/main.js"></script>
 
         <!-- REVOLUTION JS FILES -->
-        <script type="text/javascript" src="assets/js/jquery.themepunch.tools.min.js"></script>
-        <script type="text/javascript" src="assets/js/jquery.themepunch.revolution.min.js"></script>
+        <script type="text/javascript" src="/assets/js/jquery.themepunch.tools.min.js"></script>
+        <script type="text/javascript" src="/assets/js/jquery.themepunch.revolution.min.js"></script>
 
         <!-- SLIDER REVOLUTION 5.0 EXTENSIONS  
         (Load Extensions only on Local File Systems !  
         The following part can be removed on Server for On Demand Loading) -->  
-        <script type="text/javascript" src="assets/js/extensions/revolution.extension.actions.min.js"></script>
-        <script type="text/javascript" src="assets/js/extensions/revolution.extension.carousel.min.js"></script>
-        <script type="text/javascript" src="assets/js/extensions/revolution.extension.kenburn.min.js"></script>
-        <script type="text/javascript" src="assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
-        <script type="text/javascript" src="assets/js/extensions/revolution.extension.migration.min.js"></script>
-        <script type="text/javascript" src="assets/js/extensions/revolution.extension.navigation.min.js"></script>
-        <script type="text/javascript" src="assets/js/extensions/revolution.extension.parallax.min.js"></script>
-        <script type="text/javascript" src="assets/js/extensions/revolution.extension.slideanims.min.js"></script>
-        <script type="text/javascript" src="assets/js/extensions/revolution.extension.video.min.js"></script>
+        <script type="text/javascript" src="/assets/js/extensions/revolution.extension.actions.min.js"></script>
+        <script type="text/javascript" src="/assets/js/extensions/revolution.extension.carousel.min.js"></script>
+        <script type="text/javascript" src="/assets/js/extensions/revolution.extension.kenburn.min.js"></script>
+        <script type="text/javascript" src="/assets/js/extensions/revolution.extension.layeranimation.min.js"></script>
+        <script type="text/javascript" src="/assets/js/extensions/revolution.extension.migration.min.js"></script>
+        <script type="text/javascript" src="/assets/js/extensions/revolution.extension.navigation.min.js"></script>
+        <script type="text/javascript" src="/assets/js/extensions/revolution.extension.parallax.min.js"></script>
+        <script type="text/javascript" src="/assets/js/extensions/revolution.extension.slideanims.min.js"></script>
+        <script type="text/javascript" src="/assets/js/extensions/revolution.extension.video.min.js"></script>
 
         <script type="text/javascript">
             jQuery(document).ready(function() {

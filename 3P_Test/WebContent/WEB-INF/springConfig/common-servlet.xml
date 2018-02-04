@@ -33,9 +33,9 @@
 <!--    <property name="mapperLocations" value="classpath*:common/mapper/*.xml"></property> -->
 <!-- </bean> -->
 
-<bean id="ss" class="org.mybatis.spring.SqlSessionTemplate">
-   <constructor-arg ref="factoryBean"></constructor-arg>
-</bean>
+<!-- <bean id="ss" class="org.mybatis.spring.SqlSessionTemplate"> -->
+<!--    <constructor-arg ref="factoryBean"></constructor-arg> -->
+<!-- </bean> -->
 
 
 <!-- Ajax의 한글깨짐 처리를 위한 소스 -->
