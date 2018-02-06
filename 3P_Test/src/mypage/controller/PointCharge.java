@@ -18,4 +18,14 @@ public class PointCharge {
 		
 		return model;
 	}
+
+	@RequestMapping("/3PointCargeSuc.do")
+	public ModelAndView Suc(HttpSession session) {
+		
+		ModelAndView model = new ModelAndView();
+		model.setViewName("/mypage/3PointChargeSuc");
+		
+		return model;
+	}
+	
 }

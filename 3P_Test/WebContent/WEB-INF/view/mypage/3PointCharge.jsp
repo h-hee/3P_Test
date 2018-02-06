@@ -145,14 +145,14 @@
 	                                            <div class="col-sm-6">
 	                                                <div class="form-group">
 	                                                    <label>Name on Card*</label>
-	                                                    <input type="text" class="form-control" required>
+	                                                    <input type="text" class="form-control" id="CardName" required>
 	                                                </div><!-- End .form-group -->
 	                                            </div><!-- End .col-sm-6 -->
 	
 	                                            <div class="col-sm-6">
 	                                                <div class="form-group">
 	                                                    <label>Card number*</label>
-	                                                    <input type="text" class="form-control form-with-icon" placeholder="0000-0000-0000-0000" required>
+	                                                    <input type="text" class="form-control form-with-icon" placeholder="0000-0000-0000-0000" id="CardNumber" required>
 	
 	                                                    <img src="/assets/images/icon-input-card.png" alt="Card" class="form-icon">
 	                                                </div><!-- End .form-group -->
@@ -163,7 +163,7 @@
 	                                            <div class="col-sm-4">
 	                                                <div class="form-group">
 	                                                    <label>CVV number*</label>
-	                                                    <input type="text" class="form-control form-with-icon" required>
+	                                                    <input type="text" class="form-control form-with-icon" id="CVVnumber" required>
 	                                                    <span class="form-icon">
 	                                                        <img src="/assets/images/icon-input-info.png" alt="Card">
 	                                                    </span>
@@ -196,18 +196,10 @@
 	                                        <div class="clearfix form-action">
 	                                            <div class="btn-wrap pull-right">
 	                                                <span class="btn-payment-info">$405.00</span>
-	                                                <a href="#confirmation" aria-controls="confirmation" role="tab" data-toggle="tab"><input type="submit" class="btn btn-accent" value="Pay Now"></a>
-	                                            </div><!-- End .btn-wrap -->
-	                                        </div><!-- End .form-action -->
+	                                                <a href="#confirmation" aria-controls="confirmation" role="tab" data-toggle="tab"><input type="button" id="payNow" class="btn btn-accent" value="Pay Now"></a>
+	                                            </div> <!-- End .btn-wrap -->
+	                                        </div> <!-- End .form-action -->
 	                                    </form>
-	                                </div><!-- End .tab-pane -->
-	                                <div role="tabpanel" class="tab-pane" id="confirmation">
-	                                    <div class="checkout-confirm">
-	                                        <img src="/assets/images/okay.png" alt="Okay">
-	                                        <h3>Payment Complete</h3>
-	                                        <h4>Thank you for your order</h4>
-	                                        <p>We have sent you an email with all the details of your order to your email address.</p>
-	                                    </div><!-- End .checkout-confirm -->
 	                                </div><!-- End .tab-pane -->
 	                            </div>
 	                        </div><!-- End .product-details-tab -->
@@ -256,5 +248,6 @@
 
         <script src="/assets/js/plugins.js"></script>
         <script src="/assets/js/main.js"></script>
+        <script src="/js/mypage/3PointChargeJS.js"></script>
     </body>
 </html>
