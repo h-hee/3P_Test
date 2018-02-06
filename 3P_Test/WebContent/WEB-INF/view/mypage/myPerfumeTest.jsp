@@ -58,7 +58,7 @@
                                 <div class="portfolio-container max-col-3">
                                     <div class="portfolio-item Women">
                                         <figure>
-                                            <img src="assets/images/portfolio/item1.jpg" alt="Portfolio Image">
+                                            <img src="/assets/images/portfolio/item1.jpg" alt="Portfolio Image">
                                             <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
                                         </figure>
                                         <div class="portfolio-meta">
@@ -71,7 +71,7 @@
 
                                     <div class="portfolio-item Unisex">
                                         <figure>
-                                            <img src="assets/images/portfolio/item2.jpg" alt="Portfolio Image">
+                                            <img src="/assets/images/portfolio/item2.jpg" alt="Portfolio Image">
                                             <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
                                         </figure>
                                         <div class="portfolio-meta">
@@ -84,7 +84,7 @@
 
                                     <div class="portfolio-item Unisex">
                                         <figure>
-                                            <img src="assets/images/portfolio/item3.jpg" alt="Portfolio Image">
+                                            <img src="/assets/images/portfolio/item3.jpg" alt="Portfolio Image">
                                             <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
                                         </figure>
                                         <div class="portfolio-meta">
@@ -97,7 +97,7 @@
 
                                     <div class="portfolio-item Men">
                                         <figure>
-                                            <img src="assets/images/portfolio/item4.jpg" alt="Portfolio Image">
+                                            <img src="/assets/images/portfolio/item4.jpg" alt="Portfolio Image">
                                             <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
                                         </figure>
                                         <div class="portfolio-meta">
@@ -110,7 +110,7 @@
 
                                     <div class="portfolio-item Women">
                                         <figure>
-                                            <img src="assets/images/portfolio/item5.jpg" alt="Portfolio Image">
+                                            <img src="/assets/images/portfolio/item5.jpg" alt="Portfolio Image">
                                             <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
                                         </figure>
                                         <div class="portfolio-meta">
@@ -123,7 +123,7 @@
 
                                     <div class="portfolio-item Men">
                                         <figure>
-                                            <img src="assets/images/portfolio/item6.jpg" alt="Portfolio Image">
+                                            <img src="/assets/images/portfolio/item6.jpg" alt="Portfolio Image">
                                             <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
                                         </figure>
                                         <div class="portfolio-meta">
@@ -136,7 +136,7 @@
 
                                     <div class="portfolio-item Women">
                                         <figure>
-                                            <img src="assets/images/portfolio/item7.jpg" alt="Portfolio Image">
+                                            <img src="/assets/images/portfolio/item7.jpg" alt="Portfolio Image">
                                             <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
                                         </figure>
                                         <div class="portfolio-meta">
@@ -149,7 +149,7 @@
 
                                     <div class="portfolio-item Unisex">
                                         <figure>
-                                            <img src="assets/images/portfolio/item8.jpg" alt="Portfolio Image">
+                                            <img src="/assets/images/portfolio/item8.jpg" alt="Portfolio Image">
                                             <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
                                         </figure>
                                         <div class="portfolio-meta">
@@ -162,7 +162,7 @@
 
                                     <div class="portfolio-item Unisex">
                                         <figure>
-                                            <img src="assets/images/portfolio/item9.jpg" alt="Portfolio Image">
+                                            <img src="/assets/images/portfolio/item9.jpg" alt="Portfolio Image">
                                             <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
                                         </figure>
                                         <div class="portfolio-meta">
@@ -195,21 +195,21 @@
 
                                 <ul class="shop-category-list accordion">
                                     <li>
-                                        <a href="category.html">MY INFORMATION</a> 
+                                        <a href="/mypage/myInfo.do">MY INFORMATION</a> 
                                         <button class="accordion-btn collapsed" type="button" data-toggle="collapse" data-target="#accordion-ul-1" aria-expanded="false" aria-controls="accordion-ul-1"><span class="accordion-icon"></span></button>
 
                                         <ul class="collapse" id="accordion-ul-1" aria-expanded="true">
-                                            <li><a href="category.html"><i class="fa fa-caret-right"></i>CHECK MY INFO</a></li>
-                                            <li><a href="category.html"><i class="fa fa-caret-right"></i>MY PURCHASE</a></li>
+                                            <li><a href="/mypage/myInfo.do"><i class="fa fa-caret-right"></i>CHECK MY INFO</a></li>
+                                            <li><a href="/mypage/myPurchase.do"><i class="fa fa-caret-right"></i>MY PURCHASE</a></li>
                                         </ul>
                                     </li>
                                     <li class="open">
-                                        <a href="category.html">PERFUME TEST</a>
+                                        <a href="/mypage/myPerfumeTest.do">PERFUME TEST</a>
                                         <button class="accordion-btn" type="button" data-toggle="collapse" data-target="#accordion-ul-2" aria-expanded="true" aria-controls="accordion-ul-2"><span class="accordion-icon"></span></button>
 
                                         <ul class="collapse in" id="accordion-ul-2" aria-expanded="false">
-                                            <li class="active"><a href="category.html"><i class="fa fa-caret-right"></i>PERFUME TEST LIST</a></li>
-                                            <li><a href="category.html"><i class="fa fa-caret-right"></i>3POING CHARGE</a></li>
+                                            <li class="active"><a href="/mypage/myPerfumeTest.do"><i class="fa fa-caret-right"></i>PERFUME TEST LIST</a></li>
+                                            <li><a href="/mypage/3PoingCharge.do"><i class="fa fa-caret-right"></i>3POING CHARGE</a></li>
                                         </ul>
                                     </li>
                                     <li>

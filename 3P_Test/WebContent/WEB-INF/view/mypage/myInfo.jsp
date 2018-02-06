@@ -103,21 +103,21 @@
 
                                 <ul class="shop-category-list accordion">
                                     <li class="open">
-                                        <a href="category.html">MY INFORMATION</a> 
+                                        <a href="/mypage/myInfo.do">MY INFORMATION</a> 
                                         <button class="accordion-btn" type="button" data-toggle="collapse" data-target="#accordion-ul-1" aria-expanded="true" aria-controls="accordion-ul-1"><span class="accordion-icon"></span></button>
 
                                         <ul class="collapse in" id="accordion-ul-1" aria-expanded="true">
-                                            <li class="active"><a href="category.html"><i class="fa fa-caret-right"></i>CHECK MY INFO</a></li>
-                                            <li><a href="category.html"><i class="fa fa-caret-right"></i>MY PURCHASE</a></li>
+                                            <li class="active"><a href="/mypage/myInfo.do"><i class="fa fa-caret-right"></i>CHECK MY INFO</a></li>
+                                            <li><a href="/mypage/myPurchase.do"><i class="fa fa-caret-right"></i>MY PURCHASE</a></li>
                                         </ul>
                                     </li>
                                     <li>
-                                        <a href="category.html">PERFUME TEST</a>
+                                        <a href="/mypage/myPerfumeTest.do">PERFUME TEST</a>
                                         <button class="accordion-btn collapsed" type="button" data-toggle="collapse" data-target="#accordion-ul-2" aria-expanded="false" aria-controls="accordion-ul-2"><span class="accordion-icon"></span></button>
 
                                         <ul class="collapse" id="accordion-ul-2" aria-expanded="false">
-                                            <li><a href="category.html"><i class="fa fa-caret-right"></i>PERFUME TEST LIST</a></li>
-                                            <li><a href="category.html"><i class="fa fa-caret-right"></i>3POING CHARGE</a></li>
+                                            <li><a href="/mypage/myPerfumeTest.do"><i class="fa fa-caret-right"></i>PERFUME TEST LIST</a></li>
+                                            <li><a href="/mypage/3PoingCharge.do"><i class="fa fa-caret-right"></i>3POING CHARGE</a></li>
                                         </ul>
                                     </li>
                                     <li>
