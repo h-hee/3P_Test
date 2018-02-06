@@ -12,7 +12,7 @@
                 <!-- 클릭 이동 -->
                     <a href="index.jsp" class="site-logo" title="Shopo - eCommerce Template">
                     <!-- 로고 -->
-                        <img src="assets/images/logo.png" alt="Logo">
+                        <img src="/assets/images/logo.png" alt="Logo">
                         <span class="sr-only">Shopo - eCommerce Template</span>
                     </a>
 				<!-- 상단 빈공간용 div -->
@@ -21,7 +21,7 @@
                     <div class="dropdown cart-dropdown">
                         <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">
                             <span class="cart-icon">
-                                <img src="assets/images/bag.png" alt="Cart">
+                                <img src="/assets/images/bag.png" alt="Cart">
                                 <span class="cart-count">4</span>
                             </span>
                             <i class="fa fa-caret-down"></i>
@@ -32,7 +32,7 @@
                                 <div class="product">
                                     <figure class="product-image-container">
                                         <a href="product.html" title="Product Name">
-                                            <img src="assets/images/products/small/product2.jpg" alt="Product Image">
+                                            <img src="/assets/images/products/small/product2.jpg" alt="Product Image">
                                         </a>
                                     </figure>
 
@@ -49,7 +49,7 @@
                                 <div class="product">
                                     <figure class="product-image-container">
                                         <a href="product.html" title="Product Name">
-                                            <img src="assets/images/products/small/product1.jpg" alt="Product Image">
+                                            <img src="/assets/images/products/small/product1.jpg" alt="Product Image">
                                         </a>
                                     </figure>
 
