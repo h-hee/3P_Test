@@ -8,14 +8,14 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/mypage")
-public class MyPurchase {
+public class MyPerfumeTestController {
 	
-	@RequestMapping("/myPurchase.do")
-	public ModelAndView MyPurchase(HttpSession session) {
+	@RequestMapping("/myPerfumeTest.do")
+	public ModelAndView MyPerfumeTest(HttpSession session) {
 		
-		ModelAndView model = new ModelAndView();
-		model.setViewName("/mypage/myPurchase");
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/mypage/myPerfumeTest");
 		
-		return model;
+		return mv;
 	}
 }

@@ -52,21 +52,21 @@
                                 	<div class="col-sm-4">
                                 		<div class="form-group">
 		                                    <label>ID</label>
-		                                    <input type="text" class="form-control" readonly="readonly">
+		                                    <input type="text" class="form-control" value="${myInfoVO.memId}" readonly="readonly">
 		                                </div><!-- End .form-group -->
                                 	</div><!-- End .col-sm-4 -->
 
                                 	<div class="col-sm-4">
                                 		<div class="form-group">
 		                                    <label>Name</label>
-		                                    <input type="text" class="form-control" readonly="readonly">
+		                                    <input type="text" class="form-control" value="${myInfoVO.memName}" readonly="readonly">
 		                                </div><!-- End .form-group -->
                                 	</div><!-- End .col-sm-4 -->
 
                                 	<div class="col-sm-4">
                                 		<div class="form-group">
 		                                    <label>Email</label>
-		                                    <input type="email" class="form-control" readonly="readonly">
+		                                    <input type="email" class="form-control" value="${myInfoVO.memMail}" readonly="readonly">
 		                                </div><!-- End .form-group -->
                                 	</div><!-- End .col-sm-4 -->
                                 </div><!-- End .row -->
@@ -75,21 +75,21 @@
                                 	<div class="col-sm-4">
                                 		<div class="form-group">
 		                                    <label>Address</label>
-		                                    <input type="password" class="form-control" readonly="readonly">
+		                                    <input type="password" class="form-control" value="${myInfoVO.memAddr}" readonly="readonly">
 		                                </div><!-- End .form-group -->
                                 	</div><!-- End .col-sm-4 -->
 
                                 	<div class="col-sm-4">
                                 		<div class="form-group">
 		                                    <label>+ Detail</label>
-		                                    <input type="text" class="form-control" readonly="readonly">
+		                                    <input type="text" class="form-control" value="${myInfoVO.memAddetail}" readonly="readonly">
 		                                </div><!-- End .form-group -->
                                 	</div><!-- End .col-sm-4 -->
                                 	
                                 	<div class="col-sm-4">
                                 		<div class="form-group">
 		                                    <label>3Point</label>
-		                                    <input type="text" class="form-control" readonly="readonly">
+		                                    <input type="text" class="form-control" value="${myInfoVO.memPoint}" readonly="readonly">
 		                                </div><!-- End .form-group -->
                                 	</div><!-- End .col-sm-4 -->
                                 </div><!-- End .row -->

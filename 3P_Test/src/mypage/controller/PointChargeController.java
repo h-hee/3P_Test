@@ -8,24 +8,24 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 @RequestMapping("/mypage")
-public class PointCharge {
+public class PointChargeController {
 
 	@RequestMapping("/3PoingCharge.do")
 	public ModelAndView PointCharge(HttpSession session) {
 		
-		ModelAndView model = new ModelAndView();
-		model.setViewName("/mypage/3PointCharge");
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/mypage/3PointCharge");
 		
-		return model;
+		return mv;
 	}
 
 	@RequestMapping("/3PointCargeSuc.do")
 	public ModelAndView Suc(HttpSession session) {
 		
-		ModelAndView model = new ModelAndView();
-		model.setViewName("/mypage/3PointChargeSuc");
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("/mypage/3PointChargeSuc");
 		
-		return model;
+		return mv;
 	}
 	
 }
