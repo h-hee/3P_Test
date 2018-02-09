@@ -21,8 +21,8 @@
 	                        </a>
 	                    </div><!-- End .sidemenu-header -->
 	                    <ul class="metismenu">
-	                        <li><a href="#">Man</a></li>
-							<li><a href="#">Woman</a></li>
+	                        <li><a href="/product/selectCate.do">Man</a></li>
+							<li><a href="/product/selectCate.do">Woman</a></li>
 	                        <li>
 	                            <a href="#" aria-expanded="false">Brand<span class="sidemenu-icon"></span></a>
 	                            <ul aria-expanded="false" class="collapse">
@@ -33,8 +33,8 @@
 	                        </li>
 	                    </ul>
 	                   	<ul class="side-links">
-	                    	<li><a href="/3P_HH/WEB-INF/view/member/login.jsp">Login</a></li>
-	                    	<li><a href="/3P_HH/WEB-INF/view/member/join.jsp">Join</a></li>
+	                    	<li><a href="/member/login.do">Login</a></li>
+	                    	<li><a href="/member/join.do">Join</a></li>
 	                    </ul>
 	                </div><!-- End .sidemenu-wrapper -->
 	            </aside><!-- End .sidemenu -->
