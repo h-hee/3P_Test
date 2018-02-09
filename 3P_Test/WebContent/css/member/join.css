@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+.form-control {
+	width: 100%;
+	height : 45px;
+	display: inline;
+}
+#signup-frm {
+    max-width: 600px;
+	margin: 15px auto 60px;
+}
+
+@media (min-width: 992px) {
+	.col-md-push-3 {
+	    left: unset; 
+	}
+	.col-md-9 {
+		width: 100%;
+	}
+}
+label {
+	font-size: 17px;
+}
+.page-header h1 {
+	font-size: 50px;
+}
+.page-header p {
+	font-size: 15px;
+}
+#btnPost {
+	width: 35%;
+	margin-left: 2%;
+}
+#txtPost {
+	width: 62%;
+}
+.confirm {
+	margin-left: 10px;
+	color : #ff0066;
+	font-size: 15px;
+	font-weight: 700;
+}
+.post {
+	margin-bottom: 10px;
+}
