@@ -7,7 +7,7 @@
 <select id="getMyInfo" parameterType="String" resultType="myInfoVO">
 	SELECT *
 	FROM 3p.MEMBER
-	WHERE memId = #{value}
+	WHERE mem_id = #{value}
 </select>
 	
 </mapper>

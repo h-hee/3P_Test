@@ -27,15 +27,15 @@
 </bean>
 
 <!-- String mybatis 설정 -->
-<!-- <bean id="factoryBean" class="org.mybatis.spring.SqlSessionFactoryBean"> -->
-<!--    <property name="dataSource" ref="dataSource"></property> -->
-<!--    <property name="configLocation" value="classpath:common/mybatis/configMybatis.xml"></property> -->
-<!--    <property name="mapperLocations" value="classpath*:common/mapper/*.xml"></property> -->
-<!-- </bean> -->
+<bean id="factoryBean" class="org.mybatis.spring.SqlSessionFactoryBean">
+   <property name="dataSource" ref="dataSource"></property>
+   <property name="configLocation" value="classpath:common/mybatis/configMybatis.xml"></property>
+   <property name="mapperLocations" value="classpath*:common/mapper/*.xml"></property>
+</bean>
 
-<!-- <bean id="ss" class="org.mybatis.spring.SqlSessionTemplate"> -->
-<!--    <constructor-arg ref="factoryBean"></constructor-arg> -->
-<!-- </bean> -->
+<bean id="ss" class="org.mybatis.spring.SqlSessionTemplate">
+   <constructor-arg ref="factoryBean"></constructor-arg>
+</bean>
 
 
 <!-- Ajax의 한글깨짐 처리를 위한 소스 -->
