@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+%>
+<%
+	String point = (String)request.getAttribute("3Point");
+%>
 <!DOCTYPE html>
 <html>
 	<script type="text/javascript"></script>
@@ -84,41 +88,38 @@
 	                                            <div class="col-sm-3">
 	                                                <div class="form-group">
 	                                                    <label>Remaining 3Point</label>
-	                                                    <input type="text" class="form-control" readonly="readonly">
+	                                                    <input type="text" class="form-control" value="<%= point %>" readonly="readonly">
 	                                                </div><!-- End .form-group -->
 	                                            </div><!-- End .col-sm-4 -->
 	                                            
 	                                            <div class="col-sm-3">
                                                     <div class="form-group">
                                                         <label>Charge 3Point</label>
-                                                        <select class="form-control custom-select">
-                                                            <option value="one">1</option>
-                                                            <option value="two">2</option>
-                                                            <option value="three">3</option>
-                                                            <option value="four">4</option>
-                                                            <option value="five">5</option>
-                                                            <option value="six">6</option>
-                                                            <option value="seven">7</option>
-                                                            <option value="eight">8</option>
-                                                            <option value="nine">9</option>
-                                                            <option value="ten">10</option>
+                                                        <select class="form-control custom-select" id="add3Point">
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                            <option value="4">4</option>
+                                                            <option value="5">5</option>
+                                                            <option value="6">6</option>
+                                                            <option value="7">7</option>
+                                                            <option value="8">8</option>
+                                                            <option value="9">9</option>
+                                                            <option value="10">10</option>
                                                         </select>
                                                     </div><!-- End .form-group -->
                                                 </div><!-- End .col-sm-4 -->
                                                 
                                                 <div class="col-sm-2"></div>
                                                 
-                                                <div class="col-sm-4">
-				                                    <div class="cart-proceed" style="padding-top: 10px;">
-				                                        <p class="cart-subtotal"><span>TOTAL AMOUNT :</span> 3</p>
-				                                        <p class="cart-total"><span>TOTAL PRICE :</span> <span class="text-accent">$405.00</span></p>
-				                                    </div><!-- Endd .cart-proceed -->
-				                                </div><!-- End .col-sm-4 -->
+                                                <div class="col-sm-3">
+	                                                <div class="form-group">
+	                                                	<label>Next Payment</label>
+			                                            <a href="#payment" aria-controls="payment" role="tab" data-toggle="tab"><input type="button" class="btn btn-accent min-width pull-left" value="Continue"></a>
+	                                                </div><!-- End .form-group -->
+	                                            </div><!-- End .col-sm-4 -->
+                                                
 	                                        </div><!-- End .row -->
-	
-	                                        <div class="clearfix form-action">
-	                                            <a href="#payment" aria-controls="payment" role="tab" data-toggle="tab"><input type="button" class="btn btn-accent min-width pull-left" value="Continue"></a>
-	                                        </div><!-- End .form-action -->
 	                                    </form>
 	
 	                                    <div class="mb5"></div><!-- margin -->
@@ -173,10 +174,20 @@
 	                                            <div class="col-sm-4">
 	                                                <div class="form-group">
 	                                                    <label>Exp. Month*</label>
-	                                                    <select class="form-control custom-select">
+	                                                    <select class="form-control custom-select" id="month">
 	                                                        <option value="Month">Month</option>
 	                                                        <option value="January">January</option>
 	                                                        <option value="February">February</option>
+	                                                        <option value="March">March</option>
+	                                                        <option value="April">April</option>
+	                                                        <option value="May">May</option>
+	                                                        <option value="June">June</option>
+	                                                        <option value="July">July</option>
+	                                                        <option value="August">August</option>
+	                                                        <option value="September">September</option>
+	                                                        <option value="October">October</option>
+	                                                        <option value="November">November</option>
+	                                                        <option value="December">December</option>
 	                                                    </select>
 	                                                </div><!-- End .form-group -->
 	                                            </div><!-- End .col-sm-4 -->
@@ -184,10 +195,14 @@
 	                                            <div class="col-sm-4">
 	                                                <div class="form-group">
 	                                                    <label>Exp. Year*</label>
-	                                                    <select class="form-control custom-select">
+	                                                    <select class="form-control custom-select" id="year">
 	                                                        <option value="Year">Year</option>
 	                                                        <option value="2017">2017</option>
 	                                                        <option value="2018">2018</option>
+	                                                        <option value="2018">2019</option>
+	                                                        <option value="2018">2020</option>
+	                                                        <option value="2018">2021</option>
+	                                                        <option value="2018">2022</option>
 	                                                    </select>
 	                                                </div><!-- End .form-group -->
 	                                            </div><!-- End .col-sm-4 -->

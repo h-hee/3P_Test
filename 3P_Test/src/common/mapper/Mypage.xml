@@ -3,11 +3,25 @@
 "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="mypage">
 
-<!-- about us에 나타낼 회원, 펜션, 리뷰, 예약 개수 얻오기 -->
+<!-- MyInfo 페이지에 나타낼 나의 정보 값 얻어오기 -->
 <select id="getMyInfo" parameterType="String" resultType="myInfoVO">
 	SELECT *
 	FROM 3p.MEMBER
 	WHERE mem_id = #{value}
 </select>
-	
+
+<!-- 3PointCharge 페이지에 나타낼 나의 3Point 값 얻어오기 -->
+<select id="get3Point" parameterType="String" resultType="int">
+	SELECT mem_point
+	FROM 3p.MEMBER
+	WHERE mem_id = #{value}
+</select>
+
+<!-- 추가할 3Point 를 update 하기 -->
+<select id="add3Point" parameterType="HashMap">
+	UPDATE 3p.MEMBER
+	SET mem_point= mem_point + #{addPoint}
+	WHERE mem_id = #{memId}
+</select>
+
 </mapper>

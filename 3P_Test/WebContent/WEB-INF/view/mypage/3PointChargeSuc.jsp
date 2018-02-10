@@ -64,6 +64,7 @@
                                         <p>We have sent you an email with all the details of your order to your email address.</p>
                                     </div> <!-- End .checkout-confirm -->
                                 </div> <!-- End .tab-pane -->
+                                
 	                        </div><!-- End .product-details-tab -->
                         </div><!-- End .col-md-9 -->
 

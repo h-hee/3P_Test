@@ -75,7 +75,7 @@
                                 	<div class="col-sm-4">
                                 		<div class="form-group">
 		                                    <label>Address</label>
-		                                    <input type="password" class="form-control" value="${myInfoVO.memAddr}" readonly="readonly">
+		                                    <input type="text" class="form-control" value="${myInfoVO.memAddr}" readonly="readonly">
 		                                </div><!-- End .form-group -->
                                 	</div><!-- End .col-sm-4 -->
 

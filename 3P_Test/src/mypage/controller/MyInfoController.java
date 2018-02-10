@@ -17,10 +17,12 @@ public class MyInfoController {
 	@Autowired
 	private MyInfoDao myInfo;
 	
+	// 나의 정보 얻어와서 myInfo.jsp 페이지로 이동 
 	@RequestMapping("/myInfo.do")
 	public ModelAndView MyInfo(HttpSession session) {
 		
-		String memId = (String)session.getAttribute("memId");
+//		String memId = (String)session.getAttribute("memId");
+		String memId = "user";
 		
 		MyInfoVO myInfoVO = myInfo.getMyInfo(memId);
 		

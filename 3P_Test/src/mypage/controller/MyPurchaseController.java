@@ -13,6 +13,8 @@ public class MyPurchaseController {
 	@RequestMapping("/myPurchase.do")
 	public ModelAndView MyPurchase(HttpSession session) {
 		
+		String memId = (String)session.getAttribute("memId");
+		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/mypage/myPurchase");
 		
