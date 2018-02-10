@@ -2,9 +2,11 @@ package mypage.dao;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
 
 import mypage.vo.MyInfoVO;
 
+@Repository
 public class MyInfoImpl implements MyInfoDao {
 	
 	@Autowired
