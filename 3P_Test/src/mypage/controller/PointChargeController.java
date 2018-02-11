@@ -6,17 +6,16 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
-import mypage.dao.PointChargeDao;
+import mypage.dao.MyPageDao;
 
 @Controller
 @RequestMapping("/mypage")
 public class PointChargeController {
 	
 	@Autowired
-	private PointChargeDao pointCharge;
+	private MyPageDao myPage;
 
 	// 회원 별 3Point 얻어와 3PointCharge.jsp 페이지 이동
 	@RequestMapping("/3PoingCharge.do")
@@ -25,7 +24,7 @@ public class PointChargeController {
 //		String memId = (String)session.getAttribute("memId");
 		String memId = "user";
 		
-		String point = String.valueOf(pointCharge.get3Point(memId));
+		String point = String.valueOf(myPage.get3Point(memId));
 		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/mypage/3PointCharge");
@@ -42,7 +41,7 @@ public class PointChargeController {
 		String memId = "user";
 		
 		int addPoint = Integer.valueOf(add3Point);
-		pointCharge.add3Point(memId, addPoint);
+		myPage.add3Point(memId, addPoint);
 		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/mypage/3PointChargeSuc");

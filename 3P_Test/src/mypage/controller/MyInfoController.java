@@ -7,7 +7,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import mypage.dao.MyInfoDao;
+import mypage.dao.MyPageDao;
 import mypage.vo.MyInfoVO;
 
 @Controller
@@ -15,7 +15,7 @@ import mypage.vo.MyInfoVO;
 public class MyInfoController {
 
 	@Autowired
-	private MyInfoDao myInfo;
+	private MyPageDao myPage;
 	
 	// 나의 정보 얻어와서 myInfo.jsp 페이지로 이동 
 	@RequestMapping("/myInfo.do")
@@ -24,7 +24,7 @@ public class MyInfoController {
 //		String memId = (String)session.getAttribute("memId");
 		String memId = "user";
 		
-		MyInfoVO myInfoVO = myInfo.getMyInfo(memId);
+		MyInfoVO myInfoVO = myPage.getMyInfo(memId);
 		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/mypage/myInfo");
