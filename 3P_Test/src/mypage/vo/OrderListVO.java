@@ -1,12 +1,12 @@
 package mypage.vo;
 
 public class OrderListVO {
-	private int		orderSq;
-	private String	orderNum;
-	private	String	memId;
-	private int		perSq;
-	private int		orderCnt;
-	private int		orderPrice;
+	private int		orderSq;			// 주문내역 시퀀스
+	private String	orderNum;			// 주문번호 (YYMMDDHHmmSS_회원ID)
+	private	String	memId;				// 회원ID
+	private int		perSq;				// 제품ID
+	private int		orderCnt;			// 주문수량
+	private int		orderPrice;			// 주문가격
 	
 	public int getOrderSq() {
 		return orderSq;

@@ -4,7 +4,7 @@
 <mapper namespace="mypage">
 
 <!-- MyInfo 페이지에 나타낼 나의 정보 값 얻어오기 -->
-<select id="getMyInfo" parameterType="String" resultType="myInfoVO">
+<select id="getMyInfo" parameterType="String" resultType="memVO">
 	SELECT *
 	FROM 3p.MEMBER
 	WHERE mem_id = #{value}

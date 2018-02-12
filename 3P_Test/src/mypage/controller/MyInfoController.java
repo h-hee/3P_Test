@@ -7,8 +7,8 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import member.vo.MemberVO;
 import mypage.dao.MyPageDao;
-import mypage.vo.MyInfoVO;
 
 @Controller
 @RequestMapping("/mypage")
@@ -24,11 +24,11 @@ public class MyInfoController {
 //		String memId = (String)session.getAttribute("memId");
 		String memId = "user";
 		
-		MyInfoVO myInfoVO = myPage.getMyInfo(memId);
+		MemberVO memberVO = myPage.getMyInfo(memId);
 		
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("/mypage/myInfo");
-		mv.addObject("myInfoVO", myInfoVO);
+		mv.addObject("myInfoVO", memberVO);
 		
 		return mv;
 	}

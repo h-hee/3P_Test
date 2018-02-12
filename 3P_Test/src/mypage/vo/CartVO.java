@@ -1,11 +1,11 @@
 package mypage.vo;
 
 public class CartVO {
-	private String	cartNum;
-	private String	memId;
-	private int		perSq;
-	private int		cartCnt;
-	private String	cartChk;
+	private String	cartNum;		// 장바구니 번호 (제품ID_회원ID)
+	private String	memId;			// 회원ID
+	private int		perSq;			// 제품ID
+	private int		cartCnt;		// 선택수량
+	private String	cartChk;		// 결제유무
 	
 	public String getCartNum() {
 		return cartNum;
