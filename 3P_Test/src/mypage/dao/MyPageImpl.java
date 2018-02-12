@@ -1,12 +1,14 @@
 package mypage.dao;
 
 import java.util.HashMap;
+import java.util.List;
 
 import org.mybatis.spring.SqlSessionTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import member.vo.MemberVO;
+import mypage.vo.MyPurchaseVO;
 
 
 @Repository
@@ -35,6 +37,23 @@ public class MyPageImpl implements MyPageDao {
 		map.put("addPoint", addPoint);
 		
 		ss.update("mypage.add3Point", map);
+	}
+
+	// MyPurchase.jsp 에 나타낼 구매목록 값 얻어오는 메소드
+	@Override
+	public List<MyPurchaseVO> getMyPurchase(String memId) {
+		return ss.selectList("mypage.getMyPurchase", memId);
+	}
+
+	// 총 구매횟수 값 얻어오는 메소드
+	@Override
+	public int getTotalPurchase(String memId) {
+		return ss.selectOne("mypage.getTotalPurchase", memId);
+	}
+
+	// 구매목록에서 선택 된 향수가 가장 많은 값 얻어오는 메소드
+	public int getMaxPurchase(String memId) {
+		return ss.selectOne("mypage.getMaxPurchase", memId);
 	}
 
 }
