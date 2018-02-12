@@ -3,13 +3,27 @@
 PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 "http://mybatis.org/dtd/mybatis-3-config.dtd">
 <configuration>
-
- <settings>
-  <!-- 자동으로 카멜케이스 규칙으로 변환 -->
-    <setting name="mapUnderscoreToCamelCase" value="true"/>
- </settings>
- 	<!-- 각 model.vo 별칭주기 -->
-    <typeAliases>
-      <typeAlias type="mypage.vo.MyInfoVO" alias="myInfoVO" />
-  </typeAliases>
+	<settings>
+		<!-- 자동으로 카멜케이스 규칙으로 변환 -->
+		<setting name="mapUnderscoreToCamelCase" value="true"/>
+	</settings>
+	
+	<!-- 각 model.vo 별칭주기 -->
+	<typeAliases>
+		<!-- member -->
+		<typeAlias type="member.vo.MemberVO" alias="memVO"/>
+		<typeAlias type="member.vo.MemberShipVO" alias="msVO"/>
+		
+		<!-- mypage -->
+		<typeAlias type="mypage.vo.CartVO" alias="cartVO"/>
+		<typeAlias type="mypage.vo.PresmellVO" alias="preVO"/>
+		<typeAlias type="mypage.vo.OrderListVO" alias="orderVO"/>
+		
+		<!-- product -->
+		<typeAlias type="product.vo.BrandVO" alias="bdVO"/>
+		<typeAlias type="product.vo.PerfumeVO" alias="perVO"/>
+		
+		<!-- our VO -->
+		<typeAlias type="mypage.vo.MyInfoVO" alias="myinfoVO"/>
+	</typeAliases>
 </configuration>
