@@ -15,7 +15,7 @@ import mypage.dao.MyPageDao;
 public class PointChargeController {
 	
 	@Autowired
-	private MyPageDao myPage;
+	private MyPageDao myPage;													// DB 연결을 위한 MyPageDao
 
 	// 회원 별 3Point 얻어와 3PointCharge.jsp 페이지 이동
 	@RequestMapping("/3PoingCharge.do")
@@ -24,11 +24,11 @@ public class PointChargeController {
 //		String memId = (String)session.getAttribute("memId");
 		String memId = "user";
 		
-		String point = String.valueOf(myPage.get3Point(memId));
+		String point = String.valueOf(myPage.get3Point(memId));					// 회원 별 보유 3Point를 point 변수에 저장 
 		
-		ModelAndView mv = new ModelAndView();
+		ModelAndView mv = new ModelAndView();									// 페이지 이동을 위한 mv 변수선언
 		mv.setViewName("/mypage/3PointCharge");
-		request.setAttribute("3Point", point);
+		request.setAttribute("3Point", point);									// 각 변수들을 .jsp에 전달
 		
 		return mv;
 	}
@@ -40,10 +40,10 @@ public class PointChargeController {
 //		String memId = (String)session.getAttribute("memId");
 		String memId = "user";
 		
-		int addPoint = Integer.valueOf(add3Point);
-		myPage.add3Point(memId, addPoint);
+		int addPoint = Integer.valueOf(add3Point);								// parameter 값으로 가져온 추가 될 3Point를 addPoint 변수에 저장
+		myPage.add3Point(memId, addPoint);										// 추가 될 3Point를 DB에 update
 		
-		ModelAndView mv = new ModelAndView();
+		ModelAndView mv = new ModelAndView();									// 페이지 이동을 위한 mv 변수선언
 		mv.setViewName("/mypage/3PointChargeSuc");
 		
 		return mv;

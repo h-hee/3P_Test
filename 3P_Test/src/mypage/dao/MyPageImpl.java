@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import member.vo.MemberVO;
+import mypage.vo.MyPerfumeTestVO;
 import mypage.vo.MyPurchaseVO;
 
 
@@ -54,6 +55,22 @@ public class MyPageImpl implements MyPageDao {
 	// 구매목록에서 선택 된 향수가 가장 많은 값 얻어오는 메소드
 	public int getMaxPurchase(String memId) {
 		return ss.selectOne("mypage.getMaxPurchase", memId);
+	}
+
+	// MyPerfumeTest.jsp 에 나타낼 시향목록 값 얻어오는 메소드
+	@Override
+	public List<MyPerfumeTestVO> getMyPerfumeTest(String memId, int first, int last) {
+		HashMap map = new HashMap<>();
+		map.put("memId", memId);
+		map.put("first", first);
+		map.put("last", last);
+		return ss.selectList("mypage.getMyPerfumeTest", map);
+	}
+
+	// 시향목록 페이징 처리를 위한 시향목록 총 개수 얻어오는 메소드
+	@Override
+	public int getTotalPage(String memId) {
+		return ss.selectOne("mypage.getTotalPage", memId);
 	}
 
 }

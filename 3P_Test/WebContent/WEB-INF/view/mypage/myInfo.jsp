@@ -116,7 +116,7 @@
                                         <button class="accordion-btn collapsed" type="button" data-toggle="collapse" data-target="#accordion-ul-2" aria-expanded="false" aria-controls="accordion-ul-2"><span class="accordion-icon"></span></button>
 
                                         <ul class="collapse" id="accordion-ul-2" aria-expanded="false">
-                                            <li><a href="/mypage/myPerfumeTest.do"><i class="fa fa-caret-right"></i>PERFUME TEST LIST</a></li>
+                                            <li><a href="/mypage/myPerfumeTest.do?pageS=1"><i class="fa fa-caret-right"></i>PERFUME TEST LIST</a></li>
                                             <li><a href="/mypage/3PoingCharge.do"><i class="fa fa-caret-right"></i>3POING CHARGE</a></li>
                                         </ul>
                                     </li>

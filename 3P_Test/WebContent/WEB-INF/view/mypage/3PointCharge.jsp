@@ -235,7 +235,7 @@
                                         </ul>
                                     </li>
                                     <li class="open">
-                                        <a href="/mypage/myPerfumeTest.do">PERFUME TEST</a>
+                                        <a href="/mypage/myPerfumeTest.do?pageS=1">PERFUME TEST</a>
                                         <button class="accordion-btn" type="button" data-toggle="collapse" data-target="#accordion-ul-2" aria-expanded="true" aria-controls="accordion-ul-2"><span class="accordion-icon"></span></button>
 
                                         <ul class="collapse in" id="accordion-ul-2" aria-expanded="false">

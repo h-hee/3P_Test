@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 	<script type="text/javascript"></script>
@@ -49,142 +50,56 @@
 
                             <ul class="portfolio-filter text-right">
                                 <li class="active"><a href="#" data-filter="*">Show All</a></li>
-                                <li><a href="#" data-filter=".Men">Men</a></li>
-                                <li><a href="#" data-filter=".Women">Women</a></li>
-                                <li><a href="#" data-filter=".Unisex">Unisex</a></li>
+                                <li><a href="#" data-filter=".M">Men</a></li>
+                                <li><a href="#" data-filter=".W">Women</a></li>
+                                <li><a href="#" data-filter=".MW">Unisex</a></li>
                             </ul>
 
                             <div class="portfolio-row">
                                 <div class="portfolio-container max-col-3">
-                                    <div class="portfolio-item Women">
-                                        <figure>
-                                            <img src="/assets/images/portfolio/item1.jpg" alt="Portfolio Image">
-                                            <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
-                                        </figure>
-                                        <div class="portfolio-meta">
-                                            <h3 class="portfolio-title"><a href="single-portfolio.html" title="Portfolio name">the writer</a></h3>
-                                            <div class="portfolio-tags">
-                                                <a href="#">Women</a>
-                                            </div><!-- End .portfolio-tags -->
-                                        </div><!-- End .portfolio-meta -->
-                                    </div><!-- End portfolio-item -->
-
-                                    <div class="portfolio-item Unisex">
-                                        <figure>
-                                            <img src="/assets/images/portfolio/item2.jpg" alt="Portfolio Image">
-                                            <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
-                                        </figure>
-                                        <div class="portfolio-meta">
-                                            <h3 class="portfolio-title"><a href="single-portfolio.html" title="Portfolio name">house logo</a></h3>
-                                            <div class="portfolio-tags">
-                                                <a href="#">Unisex</a>
-                                            </div><!-- End .portfolio-tags -->
-                                        </div><!-- End .portfolio-meta -->
-                                    </div><!-- End portfolio-item -->
-
-                                    <div class="portfolio-item Unisex">
-                                        <figure>
-                                            <img src="/assets/images/portfolio/item3.jpg" alt="Portfolio Image">
-                                            <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
-                                        </figure>
-                                        <div class="portfolio-meta">
-                                            <h3 class="portfolio-title"><a href="single-portfolio.html" title="Portfolio name">fly away</a></h3>
-                                            <div class="portfolio-tags">
-                                                <a href="#">Unisex</a>
-                                            </div><!-- End .portfolio-tags -->
-                                        </div><!-- End .portfolio-meta -->
-                                    </div><!-- End portfolio-item -->
-
-                                    <div class="portfolio-item Men">
-                                        <figure>
-                                            <img src="/assets/images/portfolio/item4.jpg" alt="Portfolio Image">
-                                            <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
-                                        </figure>
-                                        <div class="portfolio-meta">
-                                            <h3 class="portfolio-title"><a href="single-portfolio.html" title="Portfolio name">runner campaing</a></h3>
-                                            <div class="portfolio-tags">
-                                                <a href="#">Men</a>
-                                            </div><!-- End .portfolio-tags -->
-                                        </div><!-- End .portfolio-meta -->
-                                    </div><!-- End portfolio-item -->
-
-                                    <div class="portfolio-item Women">
-                                        <figure>
-                                            <img src="/assets/images/portfolio/item5.jpg" alt="Portfolio Image">
-                                            <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
-                                        </figure>
-                                        <div class="portfolio-meta">
-                                            <h3 class="portfolio-title"><a href="single-portfolio.html" title="Portfolio name">real estate</a></h3>
-                                            <div class="portfolio-tags">
-                                                <a href="#">Women</a>
-                                            </div><!-- End .portfolio-tags -->
-                                        </div><!-- End .portfolio-meta -->
-                                    </div><!-- End portfolio-item -->
-
-                                    <div class="portfolio-item Men">
-                                        <figure>
-                                            <img src="/assets/images/portfolio/item6.jpg" alt="Portfolio Image">
-                                            <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
-                                        </figure>
-                                        <div class="portfolio-meta">
-                                            <h3 class="portfolio-title"><a href="single-portfolio.html" title="Portfolio name">music trends</a></h3>
-                                            <div class="portfolio-tags">
-                                                <a href="#">Men</a>
-                                            </div><!-- End .portfolio-tags -->
-                                        </div><!-- End .portfolio-meta -->
-                                    </div><!-- End portfolio-item -->
-
-                                    <div class="portfolio-item Women">
-                                        <figure>
-                                            <img src="/assets/images/portfolio/item7.jpg" alt="Portfolio Image">
-                                            <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
-                                        </figure>
-                                        <div class="portfolio-meta">
-                                            <h3 class="portfolio-title"><a href="single-portfolio.html" title="Portfolio name">home office</a></h3>
-                                            <div class="portfolio-tags">
-                                                <a href="#">Women</a>
-                                            </div><!-- End .portfolio-tags -->
-                                        </div><!-- End .portfolio-meta -->
-                                    </div><!-- End portfolio-item -->
-
-                                    <div class="portfolio-item Unisex">
-                                        <figure>
-                                            <img src="/assets/images/portfolio/item8.jpg" alt="Portfolio Image">
-                                            <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
-                                        </figure>
-                                        <div class="portfolio-meta">
-                                            <h3 class="portfolio-title"><a href="single-portfolio.html" title="Portfolio name">sounds of silence</a></h3>
-                                            <div class="portfolio-tags">
-                                                <a href="#">Unisex</a>
-                                            </div><!-- End .portfolio-tags -->
-                                        </div><!-- End .portfolio-meta -->
-                                    </div><!-- End portfolio-item -->
-
-                                    <div class="portfolio-item Unisex">
-                                        <figure>
-                                            <img src="/assets/images/portfolio/item9.jpg" alt="Portfolio Image">
-                                            <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
-                                        </figure>
-                                        <div class="portfolio-meta">
-                                            <h3 class="portfolio-title"><a href="single-portfolio.html" title="Portfolio name">globe icon</a></h3>
-                                            <div class="portfolio-tags">
-                                                <a href="#">Unisex</a>
-                                            </div><!-- End .portfolio-tags -->
-                                        </div><!-- End .portfolio-meta -->
-                                    </div><!-- End portfolio-item -->
+                                
+                                	<c:forEach begin="1" var="item" items="${myPerfumeTest}" varStatus="status">
+	                                    <div class="portfolio-item ${item.perGender}">
+	                                        <figure>
+	                                        	<input type="hidden" value="${item.perSq}" id="perSq" />
+	                                            <img src="/assets/images/portfolio/item1.jpg" alt="Portfolio Image">
+	                                            <a href="single-portfolio.html" class="btn-detail" role="button">View Details</a>
+	                                        </figure>
+	                                        <div class="portfolio-meta">
+	                                            <h3 class="portfolio-title"><a href="single-portfolio.html" title="Portfolio name">${item.perName}</a></h3>
+	                                            <div class="portfolio-tags">
+	                                            	<c:choose>
+														<c:when test="${item.perGender eq 'M'}">
+															<a href="#">MEN</a>
+														</c:when>
+														<c:when test="${item.perGender eq 'W'}">
+															<a href="#">WOMEN</a>
+														</c:when>
+														<c:otherwise>
+															<a href="#">UNISEX</a>
+														</c:otherwise>
+													</c:choose>
+	                                            </div><!-- End .portfolio-tags -->
+	                                        </div><!-- End .portfolio-meta -->
+	                                    </div><!-- End portfolio-item -->
+	                                </c:forEach>
 
                                 </div><!-- End .portfolio-container -->
                             </div><!-- End .portfolio-row -->
 
                             <nav aria-label="Page Navigation">
                                 <ul class="pagination">
-                                    <li><a href="#">1</a></li>
-                                    <li class="active"><a href="#">2</a></li>
-                                    <li><a href="#">3</a></li>
-                                    <li><a href="#">4</a></li>
-                                    <li><a href="#">5</a></li>
-                                    <li class="dots"><span>...</span></li>
-                                    <li><a href="#">18</a></li>
+						            <c:forEach var="i" begin="1" end="${totalPage}" step="1" varStatus="status">
+						            	<c:choose>
+											<c:when test="${page eq status.count}">
+												<li class="active"><a href="/mypage/myPerfumeTest.do?pageS=${i}">${i}</a></li>
+											</c:when>
+											<c:otherwise>
+												<li><a href="/mypage/myPerfumeTest.do?pageS=${i}">${i}</a></li>
+											</c:otherwise>
+										</c:choose>
+						            </c:forEach>
+									<!-- <li class="dots"><span>...</span></li> -->
                                 </ul>
                             </nav>
                         </div><!-- End .col-md-9 -->
@@ -204,7 +119,7 @@
                                         </ul>
                                     </li>
                                     <li class="open">
-                                        <a href="/mypage/myPerfumeTest.do">PERFUME TEST</a>
+                                        <a href="/mypage/myPerfumeTest.do?pageS=1">PERFUME TEST</a>
                                         <button class="accordion-btn" type="button" data-toggle="collapse" data-target="#accordion-ul-2" aria-expanded="true" aria-controls="accordion-ul-2"><span class="accordion-icon"></span></button>
 
                                         <ul class="collapse in" id="accordion-ul-2" aria-expanded="false">

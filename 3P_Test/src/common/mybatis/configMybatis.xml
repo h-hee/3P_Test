@@ -25,6 +25,7 @@ PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
 		
 		<!-- our VO -->
 		<typeAlias type="mypage.vo.MyPurchaseVO" alias="purchVO"/>
+		<typeAlias type="mypage.vo.MyPerfumeTestVO" alias="testVO"/>
 		
 	</typeAliases>
 </configuration>
