@@ -1,6 +1,9 @@
 package mypage.dao;
 
+import java.util.List;
+
 import member.vo.MemberVO;
+import mypage.vo.MyPurchaseVO;
 
 public interface MyPageDao {
 	
@@ -12,4 +15,13 @@ public interface MyPageDao {
 	
 	// 3Point 충전을 위한 update 메소드
 	void add3Point(String memId ,int addPoint);
+	
+	// MyPurchase.jsp 에 나타낼 구매목록 값 얻어오는 메소드
+	List<MyPurchaseVO> getMyPurchase(String memId);
+	
+	// 총 구매횟수 값 얻어오는 메소드
+	int getTotalPurchase(String memId);
+	
+	// 구매목록에서 선택 된 향수가 가장 많은 값 얻어오는 메소드
+	int getMaxPurchase(String memId);
 }

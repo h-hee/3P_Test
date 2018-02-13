@@ -1,5 +1,16 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"
+	import="mypage.vo.MyPurchaseVO"
+%>
+<%
+	MyPurchaseVO myPurchase[][] = (MyPurchaseVO[][])request.getAttribute("myPurchase");
+	String[] day = (String[])request.getAttribute("day");
+	int orderTotalPrice[] = (int[])request.getAttribute("orderTotalPrice");
+	int totalPrice = (int)request.getAttribute("totalPrice");
+	int totalCount = (int)request.getAttribute("totalCount");
+	int total = (int)request.getAttribute("total");
+	int max = (int)request.getAttribute("max");
+%>
 <!DOCTYPE html>
 <html>
 	<script type="text/javascript"></script>
@@ -74,77 +85,45 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        <tr>
-                                            <td class="product-col">
-                                                2017-02-18
-                                            </td>
-                                            <td class="price-col">
-                                                <div class="product-title">
-                                                    <a href="#">Perfume Name1</a> <br/>
-                                                    <a href="#">Perfume Name2</a> <br/>
-                                                    <a href="#">Perfume Name3</a>
-                                                </div>
-                                            </td>
-                                            <td class="product-col">
-                                                $56.00 <br/>
-                                                $50.00 <br/>
-                                                $49.00
-                                            </td>
-                                            <td class="quantity-col" style="padding-left: 30px;">
-                                            	1 <br/>
-                                            	3 <br/>
-                                            	1
-                                            </td>
-                                            <td class="total-col">$180.00</td>
-                                            <td class="delete-col"><a href="#"><img src="/img/mypage/find.png" class="show" style="height: 10px; width: 10px;"></a></td>
-                                        </tr>
-                                        
-                                        <tr>
-                                            <td class="product-col">
-                                                2017-07-18
-                                            </td>
-                                            <td class="price-col">
-                                                <div class="product-title">
-                                                    <a href="#">Perfume Name1</a> <br/>
-                                                    <a href="#">Perfume Name2</a>
-                                                </div>
-                                            </td>
-                                            <td class="product-col">
-                                                $56.00 <br/>
-                                                $50.00
-                                            </td>
-                                            <td class="quantity-col" style="padding-left: 30px;">
-                                            	1 <br/>
-                                            	1
-                                            </td>
-                                            <td class="total-col">$180.00</td>
-                                            <td class="delete-col"><a href="#"><img src="/img/mypage/find.png" class="show" style="height: 10px; width: 10px;"></a></td>
-                                        </tr>
-                                                                                
-                                        <tr>
-                                            <td class="product-col">
-                                                2018-01-30
-                                            </td>
-                                            <td class="price-col">
-                                                <div class="product-title">
-                                                    <a href="#">Perfume Name1</a> <br/>
-                                                    <a href="#">Perfume Name2</a> <br/>
-                                                    <a href="#">Perfume Name3</a>
-                                                </div>
-                                            </td>
-                                            <td class="product-col">
-                                                $56.00 <br/>
-                                                $50.00 <br/>
-                                                $49.00
-                                            </td>
-                                            <td class="quantity-col" style="padding-left: 30px;">
-                                            	1 <br/>
-                                            	1 <br/>
-                                            	4
-                                            </td>
-                                            <td class="total-col">$180.00</td>
-                                            <td class="delete-col"><a href="#"><img src="/img/mypage/find.png" class="show" style="height: 10px; width: 10px;"></a></td>
-                                        </tr>
+                                    	<% for (int i = 0; i < total; i++) { %>
+		                                        <tr>
+		                                            <td class="product-col">
+		                                                <%= day[i] %>
+		                                            </td>
+		                                            <td class="price-col">
+		                                                <div class="product-title" style="margin-right: 20px;">
+		                                                	<% for (int j = 0; j < max; j++) {
+		                                                		if(myPurchase[i][j] == null) {
+		                                                			break;
+		                                                		} else { %>
+				                                                    <a href="#"><%= myPurchase[i][j].getPerName() %></a> <br/>
+				                                                    <input type="hidden" value="<%= myPurchase[i][j].getOrderSq() %>" id="order_sq" />
+			                                                <% }
+		                                                	} %>
+		                                                </div>
+		                                            </td>
+		                                            <td class="product-col">
+		                                            	<% for (int j = 0; j < max; j++) {
+	                                                		if(myPurchase[i][j] == null) {
+	                                                			break;
+	                                                		} else { %>
+			                                                    $<%= myPurchase[i][j].getOrderPrice() %> <br/>
+		                                                <% }
+	                                                	} %>
+		                                            </td>
+		                                            <td class="quantity-col" style="padding-left: 30px;">
+		                                            	<% for (int j = 0; j < max; j++) {
+	                                                		if(myPurchase[i][j] == null) {
+	                                                			break;
+	                                                		} else { %>
+			                                                    <%= myPurchase[i][j].getOrderCnt() %> <br/>
+		                                                <% }
+	                                                	} %>
+		                                            </td>
+		                                            <td class="total-col">$<%= orderTotalPrice[i] %></td>
+		                                            <td class="delete-col"><a href="#"><img src="/img/mypage/find.png" class="show" style="height: 10px; width: 10px;"></a></td>
+		                                        </tr>
+                                        <% } %>
                                     </tbody>
                                 </table>
                             </div><!-- End .table-responsive -->
@@ -155,8 +134,8 @@
 
                                 <div class="col-sm-4 col-sm-offset-1">
                                     <div class="cart-proceed">
-                                        <p class="cart-subtotal"><span>COUNT TOTAL :</span> 24</p>
-                                        <p class="cart-total"><span>PRICE TOTAL :</span> <span class="text-accent">$405.00</span></p>
+                                        <p class="cart-subtotal"><span>COUNT TOTAL :</span> <%= totalCount %></p>
+                                        <p class="cart-total"><span>PRICE TOTAL :</span> <span class="text-accent">$<%= totalPrice %></span></p>
                                     </div><!-- Endd .cart-proceed -->
                                 </div><!-- End .col-sm-4 -->
                             </div><!-- End .row -->
@@ -217,7 +196,7 @@
 				showCloseText: 'close',
 				onBlurContainer: '.container',
 				setEvent: 'click',
-				template: '<p><br/><br/>So implement your design and place content here! If you want to close modal, please hit "Esc", click somewhere on the screen or use special button.</p>'
+				template: '<p><br/><br/>제품의 이름을 선택하면 해당 상품 판매 페이지로 이동합니다. <br/> 제품 상세보기를 원하시면 클릭하세요.</p>'
 			});
 		});
 		</script>
