@@ -7,6 +7,7 @@ public class MemberVO {
 	String memMail;		// 이메일
 	String memBirth;	// 생년월일
 	String memGender;	// 성별
+	String memPhone;	// 핸드폰번호
 	String memPost;		// 우편번호
 	String memAddr;		// 주소
 	String memAddetail;	// 상세주소
@@ -104,5 +105,11 @@ public class MemberVO {
 	}
 	public void setMsLevel(String msLevel) {
 		this.msLevel = msLevel;
+	}
+	public String getMemPhone() {
+		return memPhone;
+	}
+	public void setMemPhone(String memPhone) {
+		this.memPhone = memPhone;
 	}	
 }

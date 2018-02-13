@@ -44,15 +44,8 @@
 				
 				// join 버튼 눌렀을 때
 				$("#btnJoin").click(function() {
-					
-					// 01 * 칸 빈칸인지 아닌지 확인
-// 					if( $('#txtId').val() == '' ) {
-						abc();
-// 					} 
+					abc();
 					// 02 아이디 중복인지 아닌지 확인
-					// 03 비밀번호 자리수 확인
-					// 04 비밀번호랑 비밀번호 체크랑 같은지 확인
-					// 05 이메일 형태인지 확인
 					// 06 - 전화번호 숫자 형태인지 확인
 					// 07 - 만 14세 미만이면 회원가입 불가능
 					// 08 - 회원가입 동의 체크박스 필수 체크 했는지 확인
@@ -105,162 +98,80 @@
 				});
 				
 				function abc() {
-					if( $('#txtId').val() == '' ) { // 아이디 입력 안하면
+					$('.confirm').text('');
+					
+					if( $('#txtId').val() == '' ) { 
+					// 아이디 입력 안하면
 						$('#txtId').focus();
-						
 						$('#conId').text('아이디를 입력하세요');
-						$('#conPass').text('');
-						$('#conWord').text('');
-						$('#conName').text('');
-						$('#conMail').text('');
-						$('#conPhone').text('');
-						$('#conBday').text('');
-						$('#conAddr').text('');
-					} else if ( !id.test( $('#txtId').val() ) ) { // 아이디 유효성 검사
+						
+					} else if ( !id.test( $('#txtId').val() ) ) { 
+					// 아이디 유효성 검사
 						$('#txtId').focus();
-					
 						$('#conId').text('영문 소문자, 숫자와 특수기호(_)만 이용해서 5~20자를 입력하세요');
-						$('#conPass').text('');
-						$('#conWord').text('');
-						$('#conName').text('');
-						$('#conMail').text('');
-						$('#conPhone').text('');
-						$('#conBday').text('');
-						$('#conAddr').text('');
-					} else if( $('#txtPass').val() == '' ) { // 비밀번호 입력 안하면
+						
+					} else if( $('#txtPass').val() == '' ) { 
+					// 비밀번호 입력 안하면
 						$('#txtPass').focus();
-					
-						$('#conId').text('');
 						$('#conPass').text('비밀번호를 입력하세요');
-						$('#conWord').text('');
-						$('#conName').text('');
-						$('#conMail').text('');
-						$('#conPhone').text('');
-						$('#conBday').text('');
-						$('#conAddr').text('');
-					} else if( !pass.test( $('#txtPass').val() ) ) { // 비밀번호 유효성 검사
+						
+					} else if( !pass.test( $('#txtPass').val() ) ) { 
+					// 비밀번호 유효성 검사
 						$('#txtPass').focus();
-					
-						$('#conId').text('');
 						$('#conPass').text('영문 대 소문자, 숫자, 특수기호를 이용해서 4~20자를 입력하세요');
-						$('#conWord').text('');
-						$('#conName').text('');
-						$('#conMail').text('');
-						$('#conPhone').text('');
-						$('#conBday').text('');
-						$('#conAddr').text('');
-					} else if( $('#txtPass').val() != $('#txtWord').val() ) { // 비밀번호 확인 과 비밀번호 불일치
+						
+					} else if( $('#txtPass').val() != $('#txtWord').val() ) { 
+					// 비밀번호 확인 과 비밀번호 불일치
 						$('#txtWord').focus();
-					
-						$('#conId').text('');
-						$('#conPass').text('');
 						$('#conWord').text('비밀번호가 일치하지 않습니다.');
-						$('#conName').text('');
-						$('#conMail').text('');
-						$('#conPhone').text('');
-						$('#conBday').text('');
-						$('#conAddr').text('');
-					} else if( $('#txtName').val() == '' ) { // 이름 입력 안하면
+						
+					} else if( $('#txtName').val() == '' ) { 
+					// 이름 입력 안하면
 						$('#txtName').focus();
-					
-						$('#conId').text('');
-						$('#conPass').text('');
-						$('#conWord').text('');
 						$('#conName').text('이름을 입력하세요');
-						$('#conMail').text('');
-						$('#conPhone').text('');
-						$('#conBday').text('');
-						$('#conAddr').text('');
-					} else if( !name.test( $('#txtName').val() ) ) { // 이름 유효성 검사
+						
+					} else if( !name.test( $('#txtName').val() ) ) { 
+					// 이름 유효성 검사
 						$('#txtName').focus();
-					
-						$('#conId').text('');
-						$('#conPass').text('');
-						$('#conWord').text('');
 						$('#conName').text('영문 대 소문자, 한글을 이용해서 2~35자를 입력하세요');
-						$('#conMail').text('');
-						$('#conPhone').text('');
-						$('#conBday').text('');
-						$('#conAddr').text('');
-					} else if( $('#txtMail').val() == '' ) { // 이메일 입력 안하면
+						
+					} else if( $('#txtMail').val() == '' ) { 
+					// 이메일 입력 안하면
 						$('#txtMail').focus();
-					
-						$('#conId').text('');
-						$('#conPass').text('');
-						$('#conWord').text('');
-						$('#conName').text('');
 						$('#conMail').text('이메일을 입력하세요');
-						$('#conPhone').text('');
-						$('#conBday').text('');
-						$('#conAddr').text('');
-					} else if( !mail.test( $('#txtMail').val() ) ) { // 이메일 유효성 검사
+						
+					} else if( !mail.test( $('#txtMail').val() ) ) { 
+					// 이메일 유효성 검사
 						$('#txtMail').focus();
-					
-						$('#conId').text('');
-						$('#conPass').text('');
-						$('#conWord').text('');
-						$('#conName').text('');
 						$('#conMail').text('이메일 주소를 다시 확인해주세요');
-						$('#conPhone').text('');
-						$('#conBday').text('');
-						$('#conAddr').text('');
-					} else if( $('#txtPhone').val() == '' ) { // 전화번호 입력 안하면
+						
+					} else if( $('#txtPhone').val() == '' ) { 
+					// 전화번호 입력 안하면
 						$('#txtPhone').focus();
-					
-						$('#conId').text('');
-						$('#conPass').text('');
-						$('#conWord').text('');
-						$('#conName').text('');
-						$('#conMail').text('');
 						$('#conPhone').text('전화번호를 입력해주세요');
-						$('#conBday').text('');
-						$('#conAddr').text('');
-					} else if( !phone.test( $('#txtPhone').val() ) ) { // 전화번호 유효성 검사
+						
+					} else if( !phone.test( $('#txtPhone').val() ) ) { 
+					// 전화번호 유효성 검사
 						$('#txtPhone').focus();
-					
-						$('#conId').text('');
-						$('#conPass').text('');
-						$('#conWord').text('');
-						$('#conName').text('');
-						$('#conMail').text('');
 						$('#conPhone').text('숫자를 이용해서 7~8자를 입력하세요');
-						$('#conBday').text('');
-						$('#conAddr').text('');
-					} else if( $('#txtBday').val() == '' ) { // 생년월일 입력 안하면
+						
+					} else if( $('#txtBday').val() == '' ) { 
+					// 생년월일 입력 안하면
 						$('#txtBday').focus();
-					
-						$('#conId').text('');
-						$('#conPass').text('');
-						$('#conWord').text('');
-						$('#conName').text('');
-						$('#conMail').text('');
-						$('#conPhone').text('');
 						$('#conBday').text('생년월일을 입력하세요');
-						$('#conAddr').text('');
-					} else if( !bday.test( $('#txtBday').val() ) ) { // 생년월일 유효성 검사
+						
+					} else if( !bday.test( $('#txtBday').val() ) ) { 
+					// 생년월일 유효성 검사
 						$('#txtBday').focus();
-					
-						$('#conId').text('');
-						$('#conPass').text('');
-						$('#conWord').text('');
-						$('#conName').text('');
-						$('#conMail').text('');
-						$('#conPhone').text('');
 						$('#conBday').text('숫자를 이용해서 6자를 입력하세요');
-						$('#conAddr').text('');
-					} else if( $('#txtPost').val() == '' ) { // 우편번호 검색 안하면
+						
+					} else if( $('#txtPost').val() == '' ) {
+					// 우편번호 검색 안하면
 						$('#txtPost').focus();
-					
-						$('#conId').text('');
-						$('#conPass').text('');
-						$('#conWord').text('');
-						$('#conName').text('');
-						$('#conMail').text('');
-						$('#conPhone').text('우편번호를 검색해주세요');
-						$('#conBday').text('');
-						$('#conAddr').text('');
+						$('#conPost').text('우편번호를 검색해주세요');
+						
 					} else {
-						alert("성공");
+						$('#signup-frm').submit();
 					}
 				}
 				
@@ -287,17 +198,17 @@
                                 <p>Create a New Account</p>
                             </div><!-- End .page-header -->
 
-							<form action="#" class="signin-form" id="signup-frm">
+							<form action="/member/insertMember.do" class="signin-form" id="signup-frm">
                                 <div class="form-group">
                                     <label>ID*</label> 
                                     <span id="conId" class="confirm"></span> <br/>
-                                    <input id="txtId" type="text" class="form-control" placeholder="영문 소문자, 숫자와 특수기호(_)를 이용해서 5~20자를 입력하세요">
+                                    <input id="txtId" name="memId" type="text" class="form-control" placeholder="영문 소문자, 숫자와 특수기호(_)를 이용해서 5~20자를 입력하세요">
                                 </div><!-- End .form-group -->
 
                                 <div class="form-group">
                                     <label>Password*</label> 
                                     <span id="conPass" class="confirm"></span> <br/>
-                                    <input id="txtPass" type="password" class="form-control" placeholder="영문 대 소문자, 숫자, 특수기호를 이용해서 4~20자를 입력하세요"> 
+                                    <input id="txtPass" name="memPw" type="password" class="form-control" placeholder="영문 대 소문자, 숫자, 특수기호를 이용해서 4~20자를 입력하세요"> 
                                 </div><!-- End .form-group -->
 
 								<div class="form-group">
@@ -309,32 +220,32 @@
                                 <div class="form-group">
                                     <label>Name*</label> 
                                     <span id="conName" class="confirm"></span> <br/>
-                                    <input id="txtName" type="text" class="form-control" placeholder="이름을 입력하세요">
+                                    <input id="txtName" name="memName" type="text" class="form-control" placeholder="이름을 입력하세요">
                                 </div><!-- End .form-group -->
                                 
                                 <div class="form-group">
                                     <label>Email*</label> 
                                     <span id="conMail" class="confirm"></span> <br/>
-                                    <input id="txtMail" type="text" class="form-control" placeholder="이메일을 입력하세요">
+                                    <input id="txtMail" name="memMail" type="text" class="form-control" placeholder="이메일을 입력하세요">
                                 </div><!-- End .form-group -->
                                 
                                 <div class="form-group">
                                     <label>Phone*</label> 
                                     <span id="conPhone" class="confirm"></span> <br/>
-                                    <select>
+                                    <select name="memPhone">
                                     	<option>010</option>
                                     	<option>011</option>
                                     	<option>017</option>
                                     	<option>016</option>
                                     	<option>019</option>
                                     </select>
-                                    <input id="txtPhone" type="text" class="form-control" placeholder="전화번호를 입력하세요">
+                                    <input id="txtPhone" name="memPhone1" type="text" class="form-control" placeholder="전화번호를 입력하세요">
                                 </div><!-- End .form-group -->
                                 
                                 <div class="form-group">
                                     <label>Birthday*</label> 
                                     <span id="conBday" class="confirm"></span> <br/>
-                                    <input id="txtBday" type="text" class="form-control" placeholder="생년월일 6자리를 입력하세요 ex)951005">
+                                    <input id="txtBday" name="memBirth" type="text" class="form-control" placeholder="생년월일 6자리를 입력하세요 ex)951005">
                                 </div><!-- End .form-group -->
                                 
                                 <div class="radio-inline-container">
@@ -342,7 +253,7 @@
                                 	<span class="confirm"></span> <br/>
 									<div class="radio">
 										<label>
-											<input type="radio" name="gender">
+											<input type="radio" name="memGender" value="M">
 											<span class="check"></span>
 											<span class="circle"></span>
 											Male
@@ -350,7 +261,7 @@
 									</div><!-- End .radio -->
 									<div class="radio">
 										<label>
-											<input type="radio" name="gender">
+											<input type="radio" name="memGender" value="W">
 											<span class="check"></span>
 											<span class="circle"></span>
 											Female
@@ -362,10 +273,10 @@
                                	<div class="form-group">
                                     <label>Address*</label> 
 									<span id="conAddr" class="confirm"></span> <br/>
-                                    <input id="txtPost" type="text" class="post form-control" placeholder="Post" readonly>
+                                    <input id="txtPost" name="memPost" type="text" class="post form-control" placeholder="Post" readonly>
                                     	<input id="btnPost" type="button" class="post btn btn-primary min-width" value="SEARCH"/>
-                                    <input id="txtAddr" type="text" class="post form-control" placeholder="Address" readonly>
-                                    <input id="txtAD" type="text" class="form-control" placeholder="Address Detail">
+                                    <input id="txtAddr" name="memAddr" type="text" class="post form-control" placeholder="Address" readonly>
+                                    <input id="txtAD" name="memAddetail" type="text" class="form-control" placeholder="Address Detail">
                                 </div><!-- End .form-group -->
                                	
                                	<div class="clearfix form-action">
