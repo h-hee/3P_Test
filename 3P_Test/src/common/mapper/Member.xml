@@ -9,4 +9,14 @@
 		VALUES(#{memId}, #{memPw}, #{memName}, #{memMail}, #{memBirth}, #{memGender}, #{memPost}, #{memAddr}, #{memAddetail}, #{memPhone})
 	</insert>
 	
+	<!--  -->
+	<select id="selectMember" parameterType="memVO" resultType="memVO">
+		SELECT *
+		FROM 3p.MEMBER
+		WHERE mem_id = #{memId} 
+		<if test="#{memPw} != null">
+			AND mem_pw = #{memPw}
+		</if>
+	</select>
+	
 </mapper>

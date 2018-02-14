@@ -198,7 +198,7 @@
                                 <p>Create a New Account</p>
                             </div><!-- End .page-header -->
 
-							<form action="/member/insertMember.do" class="signin-form" id="signup-frm">
+							<form method="post" action="/member/insertMember.do" class="signin-form" id="signup-frm">
                                 <div class="form-group">
                                     <label>ID*</label> 
                                     <span id="conId" class="confirm"></span> <br/>

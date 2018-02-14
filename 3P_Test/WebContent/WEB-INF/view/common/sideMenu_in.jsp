@@ -76,7 +76,7 @@
                     </ul>
                     <ul class="side-links">
                     	<li><a href="signin.jsp">Cart</a></li>
-                    	<li><a href="join.jsp">Logout</a></li>
+                    	<li><a href="/member/logout.do">Logout</a></li>
                     </ul>
                 </div><!-- End .sidemenu-wrapper -->
             </aside><!-- End .sidemenu -->

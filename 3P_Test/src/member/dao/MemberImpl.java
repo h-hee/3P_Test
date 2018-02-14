@@ -19,4 +19,11 @@ public class MemberImpl implements MemberDao {
 		return ss.insert("member.insertMember", vo);
 	}
 
+	@Override
+	public MemberVO selectMember(MemberVO vo) {
+	// login.jsp에서 회원이 맞나 확인하는 메소드
+		
+		return ss.selectOne("member.selectMember", vo);
+	}
+
 }

@@ -37,19 +37,19 @@
                     <div class="row">
                         <div class="col-md-9 col-md-push-3">
                             <div class="page-header text-center">
-                                <h1>Sign in</h1>
-                                <p>Signin To Your Account</p>
+                                <h1>LOGIN</h1>
+                                <p>Login To Your Account</p>
                             </div><!-- End .page-header -->
 
-                            <form action="#" class="signin-form">
+                            <form method="post" action="/member/selectMember.do" class="signin-form">
                                 <div class="form-group">
                                     <label>ID*</label>
-                                    <input type="text" class="form-control" required>
+                                    <input type="text" class="form-control" name="memId" required>
                                 </div><!-- End .form-group -->
 
                                 <div class="form-group">
                                     <label>Password*</label>
-                                    <input type="password" class="form-control" required>
+                                    <input type="password" class="form-control" name="memPw" required>
                                 </div><!-- End .form-group -->
 
                                 <div class="clearfix form-more">
@@ -64,9 +64,8 @@
                                 </div><!-- End .form-more -->
 
                                 <div class="clearfix form-action">
-                                    <a href="/signup.jsp" class="btn btn-primary pull-left min-width">CREATE ACCOUNT</a>
-
-                                    <input type="submit" class="btn btn-accent pull-right min-width" value="SIGN IN">
+                                    <a href="/member/join.do" class="btn btn-primary pull-left min-width">CREATE ACCOUNT</a>
+                                    <input type="submit" class="btn btn-accent pull-right min-width" value="LOGIN">
                                 </div><!-- End .form-action -->
                             </form>
                         </div><!-- End .col-md-9 -->

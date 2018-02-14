@@ -1,5 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%
+    	Object obj = session.getAttribute("memId");
+//     	if(obj != null) 
+    %>
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,8 +34,11 @@
 	        
 	        	<jsp:include page="/WEB-INF/view/common/header_main.jsp"/>
 	        	
+	        <% if(obj == null) { %>
 				<jsp:include page="/WEB-INF/view/common/sideMenu_out.jsp"/>
-				
+			<% } else { %>
+				<jsp:include page="/WEB-INF/view/common/sideMenu_in.jsp"/>
+			<% } %>
 	            <div class="sidemenu-overlay"></div><!-- End .sidemenu-overlay -->
 	            
 	            <div class="main">
