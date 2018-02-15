@@ -7,6 +7,7 @@ public class PerfumeVO {
 	private int		perPrice;
 	private String	perShort;
 	private String	perLong;
+	private String 	perGender;
 	private String 	perDate;
 	
 	public int getPerSq() {
@@ -51,4 +52,11 @@ public class PerfumeVO {
 	public void setPerDate(String perDate) {
 		this.perDate = perDate;
 	}
+	public String getPerGender() {
+		return perGender;
+	}
+	public void setPerGender(String perGender) {
+		this.perGender = perGender;
+	}
+	
 }
