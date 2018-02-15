@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="product">
+
+	<!-- index.jsp에서 향수 best 얻어오기 -->
+	<select id="perfumeBest" resultType="perVO">
+		<![CDATA[
+			SELECT *
+			FROM 3p.PERFUME
+			WHERE per_sq IN ( SELECT b.per_sq
+							FROM ( SELECT @rownum:=@rownum+1 rownum, a.*
+									FROM ( SELECT per_sq, SUM(order_cnt) bestCnt
+											FROM 3p.ORDERLIST
+											GROUP BY per_sq
+											ORDER BY bestCnt DESC ) a
+									WHERE (@rownum:=0)=0 ) b
+							WHERE rownum <= 5 )
+		]]>
+	</select>
+
+</mapper>
