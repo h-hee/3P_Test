@@ -16,13 +16,4 @@ public class CommonController {
 		return "/common/" + url;
 	}
 	
-	// index new/best
-	@RequestMapping("/common/index.do")
-	public ModelAndView index(ModelAndView mv) {
-		mv.setViewName("/common/index");
-		
-		
-		
-		return mv;
-	}
 }
