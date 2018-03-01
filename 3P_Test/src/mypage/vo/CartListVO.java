@@ -2,7 +2,8 @@ package mypage.vo;
 
 public class CartListVO {
 	private String perName;	// 해당 제품 이름
-	private int perPrice;	// 해당 제품 가격 * 선택 수량
+	private int perPrice;	// 해당 제품 가격
+	private int cntPrice;	// 해당 제품 가격 * 선택 수량
 	private int cartCnt;	// 해당 제품 선택 수량
 	
 	public CartListVO() {}
@@ -30,4 +31,11 @@ public class CartListVO {
 	public void setCartCnt(int cartCnt) {
 		this.cartCnt = cartCnt;
 	}
+	public int getCntPrice() {
+		return cntPrice;
+	}
+	public void setCntPrice(int cntPrice) {
+		this.cntPrice = cntPrice;
+	}
+	
 }

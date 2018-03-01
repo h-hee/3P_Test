@@ -1,7 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -38,7 +38,7 @@
                             <div class="dropdown-menu-wrapper">
                             
                             	<c:forEach var="cart" items="${ cartList }">
-                            	<c:set var="totalPrice" value="${totalPrice + cart.perPrice }"></c:set>
+                            		<c:set var="totalPrice" value="${totalPrice + cart.cntPrice }"></c:set>
                            		<div class="product">
                                     <figure class="product-image-container">
                                         <a href="product.html" title="Product Name">
@@ -60,7 +60,7 @@
 
                             <div class="cart-dropdowm-action">
                                 <div class="dropdowm-cart-total"><span>TOTAL:</span> <c:out value="${totalPrice}원"></c:out> </div>
-                                <a href="checkout.html" class="btn btn-primary">Checkout</a>
+                                <a href="/product/checkout.do" class="btn btn-primary">Checkout</a>
                             </div><!-- End .cart-dropdown-action -->
                             </c:if>
                         </div><!-- End .dropdown-menu -->

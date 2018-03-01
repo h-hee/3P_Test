@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 	<script type="text/javascript"></script>
@@ -92,6 +93,8 @@
 			                                        </tr>
 			                                    </thead>
 			                                    <tbody>
+		                                    	<c:forEach var="cart" items="${ cartList }">
+		                                    	<c:set var="totalPrice" value="${ totalPrice + cart.cntPrice }"></c:set>
 			                                        <tr>
 			                                            <td class="product-col">
 			                                                <div class="product">
@@ -101,71 +104,29 @@
 			                                                        </a>
 			                                                    </figure>
 			                                                    <h3 class="product-title">
-			                                                        <a href="product.html">Tripod lampshade</a>
+			                                                        <a href="product.html">${ cart.perName }</a>
 			                                                    </h3>
 			                                                </div><!-- End .product -->
 			                                            </td>
-			                                            <td class="price-col">$180.00</td>
+			                                            <td class="price-col">${ cart.perPrice }원</td>
 			                                            <td class="quantity-col">
-			                                                <input class="cart-product-quantity form-control" type="text">
+			                                                <input class="cart-product-quantity form-control" type="text" value="${ cart.cartCnt }원">
 			                                            </td>
-			                                            <td class="total-col">$180.00</td>
+			                                            <td class="total-col">${ cart.cntPrice }</td>
 			                                            <td class="delete-col"><a href="#" class="btn-delete" title="Delete product" role="button"></a></td>
 			                                        </tr>
-			
-			                                        <tr>
-			                                            <td class="product-col">
-			                                                <div class="product">
-			                                                    <figure class="product-image-container">
-			                                                        <a href="product.html">
-			                                                            <img src="assets/images/products/cart/product2.jpg" alt="Product">
-			                                                        </a>
-			                                                    </figure>
-			                                                    <h3 class="product-title">
-			                                                        <a href="product.html">Woolen scarf</a>
-			                                                    </h3>
-			                                                </div><!-- End .product -->
-			                                            </td>
-			                                            <td class="price-col">$95.00</td>
-			                                            <td class="quantity-col">
-			                                                <input class="cart-product-quantity form-control" type="text">
-			                                            </td>
-			                                            <td class="total-col">$95.00</td>
-			                                            <td class="delete-col"><a href="#" class="btn-delete" title="Delete product" role="button"></a></td>
-			                                        </tr>
-			
-			                                        <tr>
-			                                            <td class="product-col">
-			                                                <div class="product">
-			                                                    <figure class="product-image-container">
-			                                                        <a href="product.html">
-			                                                            <img src="assets/images/products/cart/product3.jpg" alt="Product">
-			                                                        </a>
-			                                                    </figure>
-			                                                    <h3 class="product-title">
-			                                                        <a href="product.html">Dining Chair</a>
-			                                                    </h3>
-			                                                </div><!-- End .product -->
-			                                            </td>
-			                                            <td class="price-col">$130.00</td>
-			                                            <td class="quantity-col">
-			                                                <input class="cart-product-quantity form-control" type="text">
-			                                            </td>
-			                                            <td class="total-col">$130.00</td>
-			                                            <td class="delete-col"><a href="#" class="btn-delete" title="Delete product" role="button"></a></td>
-			                                        </tr>
+		                                        </c:forEach>
 			                                    </tbody>
 			                                </table>
 			                            </div><!-- End .table-responsive -->
-			                            
 			                            
 			                            <div class="row">
 			                                <div class="col-sm-7"></div><!-- End .col-sm-7 -->
 			
 			                                <div class="col-sm-4 col-sm-offset-1">
 			                                    <div class="cart-proceed">
-			                                        <p class="cart-subtotal"><span>SUB TOTAL :</span> $405.00</p>
-			                                        <p class="cart-total"><span>Grand TOTAL :</span> <span class="text-accent">$405.00</span></p>
+			                                        <p class="cart-subtotal"><span>TOTAL COUNT :</span> ${ cartCnt } 개</p>
+			                                        <p class="cart-total"><span>TOTAL PRICE :</span> <span class="text-accent"><c:out value="${totalPrice}"></c:out>원</span></p>
 			                                    </div><!-- Endd .cart-proceed -->
 			                                </div><!-- End .col-sm-4 -->
 			                            </div><!-- End .row -->

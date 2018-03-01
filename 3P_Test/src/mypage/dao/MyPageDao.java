@@ -3,6 +3,7 @@ package mypage.dao;
 import java.util.List;
 
 import member.vo.MemberVO;
+import mypage.vo.CartListVO;
 import mypage.vo.CartVO;
 import mypage.vo.MyPerfumeTestVO;
 import mypage.vo.MyPurchaseVO;
@@ -34,6 +35,6 @@ public interface MyPageDao {
 	int getTotalPage(String memId);
 	
 	// 로그인한 사용자의 장바구니 내역 조회하는 메소드
-	public List<CartVO> selectCart(String id);
+	public List<CartListVO> selectCart(String id);
 	
 }

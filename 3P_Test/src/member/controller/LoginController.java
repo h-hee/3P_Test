@@ -13,6 +13,7 @@ import common.controller.IndexController;
 import member.dao.MemberDao;
 import member.vo.MemberVO;
 import mypage.dao.MyPageDao;
+import mypage.vo.CartListVO;
 import mypage.vo.CartVO;
 import product.dao.ProductDao;
 
@@ -32,7 +33,7 @@ public class LoginController {
 		
 		if(user != null) { // 아이디와 비밀번호가 일치할 때
 			
-			List<CartVO> cartList = myDAO.selectCart(user.getMemId());
+			List<CartListVO> cartList = myDAO.selectCart(user.getMemId());
 			String cartCnt = String.valueOf(cartList.size());
 			session.setAttribute("memId", user.getMemId());
 			
