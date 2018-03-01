@@ -18,15 +18,15 @@ public class IndexController {
 	private ProductDao proDAO;
 	
 	// index.jsp에서 new & best 향수 목록 나타내기
-	@RequestMapping("/index.do")
+	@RequestMapping("/index")
 	public ModelAndView index(ModelAndView mv) {
 		
 		List<PerfumeVO> perNew = proDAO.PerfumeNew();
 		List<PerfumeVO> perBest = proDAO.PerfumeBest();
 		
+		mv.addObject("newlist", perNew);
+		mv.addObject("bestlist", perBest);
 		mv.setViewName("/common/index");
-		mv.addObject("new", perNew);
-		mv.addObject("best", perBest);
 		
 		return mv;
 	}

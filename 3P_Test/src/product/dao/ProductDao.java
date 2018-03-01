@@ -2,6 +2,7 @@ package product.dao;
 
 import java.util.List;
 
+import mypage.vo.CartVO;
 import product.vo.PerfumeVO;
 
 public interface ProductDao {
@@ -10,4 +11,5 @@ public interface ProductDao {
 	
 	// index.jsp에서 향수 best 목록 가져오는 메소드
 	public List<PerfumeVO> PerfumeBest();
+	
 }

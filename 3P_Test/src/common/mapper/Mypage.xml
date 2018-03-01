@@ -67,4 +67,14 @@
 			WHERE pf.per_sq = ps.per_sq AND ps.mem_id = #{value}) as many
 </select>
 
+<!-- 회원에 따른 장바구니 목록 출력 -->
+<select id="selectCart" parameterType="hashmap" resultType="clVO">
+	SELECT PERFUME.per_name per_name, (CARTLIST.cart_cnt*PERFUME.per_price) per_price, CARTLIST.cart_cnt 
+	FROM PERFUME, ( SELECT per_sq, SUM(cart_cnt) cart_cnt
+					FROM CART
+					WHERE mem_id = #{memId} AND cart_chk = 'N'
+					GROUP BY per_sq ) CARTLIST
+	WHERE PERFUME.per_sq = CARTLIST.per_sq
+</select>
+
 </mapper>

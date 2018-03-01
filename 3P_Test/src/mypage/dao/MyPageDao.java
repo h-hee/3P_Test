@@ -3,6 +3,7 @@ package mypage.dao;
 import java.util.List;
 
 import member.vo.MemberVO;
+import mypage.vo.CartVO;
 import mypage.vo.MyPerfumeTestVO;
 import mypage.vo.MyPurchaseVO;
 
@@ -31,4 +32,8 @@ public interface MyPageDao {
 	
 	// 시향목록 페이징 처리를 위한 시향목록 총 개수 얻어오는 메소드
 	int getTotalPage(String memId);
+	
+	// 로그인한 사용자의 장바구니 내역 조회하는 메소드
+	public List<CartVO> selectCart(String id);
+	
 }

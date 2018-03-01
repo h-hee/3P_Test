@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
 
 import member.vo.MemberVO;
+import mypage.vo.CartVO;
 import mypage.vo.MyPerfumeTestVO;
 import mypage.vo.MyPurchaseVO;
 
@@ -73,4 +74,13 @@ public class MyPageImpl implements MyPageDao {
 		return ss.selectOne("mypage.getTotalPage", memId);
 	}
 
+	@Override
+	public List<CartVO> selectCart(String id) {
+	// 로그인한 사용자의 장바구니 내역 조회하는 메소드
+		HashMap map = new HashMap<>();
+		map.put("memId", id);
+		
+		return ss.selectList("mypage.selectCart", map);
+	}
+	
 }

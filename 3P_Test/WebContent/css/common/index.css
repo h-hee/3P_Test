@@ -68,3 +68,7 @@
 		.search-form-container form {
 			border: 2px solid;
 		}
+		
+		#bestSpan {
+			display : none;
+		}

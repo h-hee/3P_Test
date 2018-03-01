@@ -1,8 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
     <%
     	Object obj = session.getAttribute("memId");
-//     	if(obj != null) 
     %>
 <!DOCTYPE html>
 <html>
@@ -56,16 +56,21 @@
 	<!-- 			                <div id="imsi02" style="height: 50px;" ></div> -->
 		                        <div class="tp-bannertimer tp-bottom" style="display:none; height: 2px; background-color: rgba(0, 0, 0, 0.2);"></div>
 	                            
-	                            <h3 class="carousel-title">Featured Product</h3>
-	                            <div class="owl-data-carousel owl-carousel"
+	                            <h2 class="carousel-title newbest"><span id="perNew">NEW</span> / <span id="perBest">BEST</span></h2>
+
+								<span id="newSpan">
+								
+								<div class="owl-data-carousel owl-carousel"
 	                            data-owl-settings='{ "items":4, "nav": true, "dots":false }'
 	                            data-owl-responsive='{ "480": {"items": 2}, "768": {"items": 3}, "992": {"items": 3}, "1200": {"items": 4} }'>
+	                            
+								<c:forEach var="list" items="${ newlist }">
 	                                <div class="product">
 	                                    <figure class="product-image-container">
 	                                        <a href="/product.html" title="Product Name" class="product-image-link">
 	                                            <img class="owl-lazy" src="/assets/images/blank.png" data-src="/assets/images/products/product5.jpg" width="195" height="255" alt="Product Image">
 	                                        </a>
-	                                        <span class="product-label">-55%</span>
+	                                        <span class="product-label">${ list.perGender }</span>
 	                                        <a href="/#" class="btn-quick-view">Quick View</a>
 	
 	                                        <div class="product-action">
@@ -82,18 +87,29 @@
 	                                        </div><!-- End .product-action -->
 	                                    </figure>
 	                                    <h3 class="product-title">
-	                                        <a href="/product.html">Chandelier bulb</a>
+	                                        <a href="/product.html">${ list.perName }</a>
 	                                    </h3>
 	                                    <div class="product-price-container">
-	                                        <span class="product-price">$250.00</span>
+	                                        <span class="product-price">${ list.perPrice }원</span>
 	                                    </div><!-- Endd .product-price-container -->
 	                                </div><!-- End .product -->
-	
+								</c:forEach>
+								</div><!-- End .owl-data-carousel -->
+								
+	                            </span>
+	                            
+	                            <span id="bestSpan">
+	                            <div class="owl-data-carousel owl-carousel"
+	                            data-owl-settings='{ "items":4, "nav": true, "dots":false }'
+	                            data-owl-responsive='{ "480": {"items": 2}, "768": {"items": 3}, "992": {"items": 3}, "1200": {"items": 4} }'>
+	                            
+								<c:forEach var="list" items="${ bestlist }">
 	                                <div class="product">
 	                                    <figure class="product-image-container">
 	                                        <a href="/product.html" title="Product Name" class="product-image-link">
-	                                            <img class="owl-lazy" src="/assets/images/blank.png" data-src="/assets/images/products/product10.jpg" width="195" height="255" alt="Product Image">
+	                                            <img class="owl-lazy" src="/assets/images/blank.png" data-src="/assets/images/products/product5.jpg" width="195" height="255" alt="Product Image">
 	                                        </a>
+	                                        <span class="product-label">${ list.perGender }</span>
 	                                        <a href="/#" class="btn-quick-view">Quick View</a>
 	
 	                                        <div class="product-action">
@@ -110,98 +126,16 @@
 	                                        </div><!-- End .product-action -->
 	                                    </figure>
 	                                    <h3 class="product-title">
-	                                        <a href="/product.html">Dining chair</a>
+	                                        <a href="/product.html">${ list.perName }</a>
 	                                    </h3>
 	                                    <div class="product-price-container">
-	                                        <span class="product-price">$130.00</span>
+	                                        <span class="product-price">${ list.perPrice }원</span>
 	                                    </div><!-- Endd .product-price-container -->
 	                                </div><!-- End .product -->
-	
-	                                <div class="product">
-	                                    <figure class="product-image-container">
-	                                        <a href="/product.html" title="Product Name" class="product-image-link">
-	                                            <img class="owl-lazy" src="/assets/images/blank.png" data-src="/assets/images/products/product11.jpg" width="195" height="255" alt="Product Image">
-	                                        </a>
-	                                        <a href="/#" class="btn-quick-view">Quick View</a>
-	
-	                                        <div class="product-action">
-	                                            <a href="/#" class="btn-product btn-wishlist" title="Add to Wishlist">
-	                                                <i class="icon-product icon-heart"></i>
-	                                            </a>
-	                                            <a href="/#" class="btn-product btn-add-cart" title="Add to Bag">
-	                                                <i class="icon-product icon-bag"></i>
-	                                                <span>Add to Bag</span>
-	                                            </a>
-	                                            <a href="/#" class="btn-product btn-compare" title="Add to Compare">
-	                                                <i class="icon-product icon-bar"></i>
-	                                            </a>
-	                                        </div><!-- End .product-action -->
-	                                    </figure>
-	                                    <h3 class="product-title">
-	                                        <a href="/product.html">Woolen scarf</a>
-	                                    </h3>
-	                                    <div class="product-price-container">
-	                                        <span class="product-price">$95.00</span>
-	                                    </div><!-- Endd .product-price-container -->
-	                                </div><!-- End .product -->
-	
-	                                <div class="product">
-	                                    <figure class="product-image-container">
-	                                        <a href="/product.html" title="Product Name" class="product-image-link">
-	                                            <img class="owl-lazy" src="/assets/images/blank.png" data-src="/assets/images/products/product12.jpg" width="195" height="255" alt="Product Image">
-	                                        </a>
-	                                        <a href="/#" class="btn-quick-view">Quick View</a>
-	
-	                                        <div class="product-action">
-	                                            <a href="/#" class="btn-product btn-wishlist" title="Add to Wishlist">
-	                                                <i class="icon-product icon-heart"></i>
-	                                            </a>
-	                                            <a href="/#" class="btn-product btn-add-cart" title="Add to Bag">
-	                                                <i class="icon-product icon-bag"></i>
-	                                                <span>Add to Bag</span>
-	                                            </a>
-	                                            <a href="/#" class="btn-product btn-compare" title="Add to Compare">
-	                                                <i class="icon-product icon-bar"></i>
-	                                            </a>
-	                                        </div><!-- End .product-action -->
-	                                    </figure>
-	                                    <h3 class="product-title">
-	                                        <a href="/product.html">Tripod lampshade</a>
-	                                    </h3>
-	                                    <div class="product-price-container">
-	                                        <span class="product-price">$180.00</span>
-	                                    </div><!-- Endd .product-price-container -->
-	                                </div><!-- End .product -->
-	
-	                               <div class="product">
-	                                    <figure class="product-image-container">
-	                                        <a href="/product.html" title="Product Name" class="product-image-link">
-	                                            <img class="owl-lazy" src="/assets/images/blank.png" data-src="/assets/images/products/product14.jpg" width="195" height="255" alt="Product Image">
-	                                        </a>
-	                                        <a href="/#" class="btn-quick-view">Quick View</a>
-	
-	                                        <div class="product-action">
-	                                            <a href="/#" class="btn-product btn-wishlist" title="Add to Wishlist">
-	                                                <i class="icon-product icon-heart"></i>
-	                                            </a>
-	                                            <a href="/#" class="btn-product btn-add-cart" title="Add to Bag">
-	                                                <i class="icon-product icon-bag"></i>
-	                                                <span>Add to Bag</span>
-	                                            </a>
-	                                            <a href="/#" class="btn-product btn-compare" title="Add to Compare">
-	                                                <i class="icon-product icon-bar"></i>
-	                                            </a>
-	                                        </div><!-- End .product-action -->
-	                                    </figure>
-	                                    <h3 class="product-title">
-	                                        <a href="/product.html">Ceiling lights</a>
-	                                    </h3>
-	                                    <div class="product-price-container">
-	                                        <span class="product-price">$140.00</span>
-	                                    </div><!-- Endd .product-price-container -->
-	                                </div><!-- End .product -->
-	                            </div><!-- End .owl-data-carousel -->
-	
+								</c:forEach>
+								</div><!-- End .owl-data-carousel -->
+	                            </span>
+	                            
 	                            <div class="mb30 mb10-xs"></div><!-- margin -->
 	
 	                            
