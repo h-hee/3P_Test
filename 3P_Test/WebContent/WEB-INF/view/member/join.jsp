@@ -183,7 +183,7 @@
     <body>
         <div id="wrapper">
         
-            <jsp:include page="/WEB-INF/view/common/header_other.jsp"/>
+            <jsp:include page="/WEB-INF/view/common/header.jsp"/>
             
 			<jsp:include page="/WEB-INF/view/common/sideMenu_out.jsp"/>
 

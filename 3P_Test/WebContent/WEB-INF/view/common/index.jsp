@@ -32,7 +32,7 @@
     <body>
 	        <div id="wrapper">
 	        
-	        	<jsp:include page="/WEB-INF/view/common/header_main.jsp"/>
+	        	<jsp:include page="/WEB-INF/view/common/header.jsp"/>
 	        	
 	        <% if(obj == null) { %>
 				<jsp:include page="/WEB-INF/view/common/sideMenu_out.jsp"/>

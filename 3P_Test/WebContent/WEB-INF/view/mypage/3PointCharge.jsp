@@ -36,7 +36,7 @@
     <body>
         <div id="wrapper">
         	
-        	<jsp:include page="/WEB-INF/view/common/header_other.jsp"></jsp:include>
+        	<jsp:include page="/WEB-INF/view/common/header.jsp"></jsp:include>
         	
         	<jsp:include page="/WEB-INF/view/common/sideMenu_in.jsp"></jsp:include>
 
